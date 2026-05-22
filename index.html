@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OptiYouth HPC Lab</title>
+<link href="styles.css" rel="stylesheet"/>
+<script>
+        function updateTime() {
+            const timeElement = document.getElementById('real-time');
+            const now = new Date();
+
+            
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+
+            const timeString = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+            
+            
+            timeElement.textContent = timeString;
+        }
+
+        setInterval(updateTime, 1000);
+
+        updateTime();
+    </script>
+    <style>
+         #real-time {
+            font-weight: 600;     
+            color: #eef1f5;        
+            font-family: monospace;
+            font-size: 12pt; 
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+<nav class="nav">
+<div class="container nav-inner">
+<a aria-label="OptiYouth HPC Lab 首页" class="brand" href="#top"><span class="brand-mark">OY</span><span><strong>OptiYouth HPC Lab</strong><span>Qinghai University</span></span></a>
+<div class="nav-links">
+<a href="#overview">团队起源</a><a href="#leader">负责人</a><a href="#members">团队成员</a><a href="#directions">研究方向</a><a href="#research">科研成果</a><a href="#competition">学科竞赛</a><a href="#contact">联系方式</a>
+</div>
+</div>
+</nav>
+<header class="hero" id="top">
+<div class="container hero-inner">
+<div>
+<h1>OptiYouth<br/>HPC Lab</h1>
+<h2>面向稀疏计算、类脑计算、HPC/AI应用软件性能优化的团队</h2>
+<p class="hero-desc">我们以国家级科研项目、高质量学术论文和学科竞赛为牵引，聚焦稀疏数值计算、HPC/AI应用软件、类脑芯片软件栈与大模型推理引擎优化，培养能够解决真实系统性能问题的青年人才。</p>
+<div class="hero-actions"><a class="btn primary" href="#overview">了解起源</a><a class="btn ghost" href="#competition">查看竞赛成果</a></div>
+</div>
+<div aria-hidden="true" class="hero-panel">
+<div class="orb"></div>
+<div class="glass-card"><div class="terminal-bar"><i></i><i></i><i></i></div><div class="code-line">Sparse Kernels<br/>HPC / AI Software<br/>Brain-inspired Stack<br/>LLM Inference Engine<br/>Performance Tuning</div></div>
+<div class="mini-chip"><b>HPC</b><span>Parallel · Scalable · Efficient</span></div>
+<div class="mini-chip two"><b>Brain-inspired Computing</b><span style="align-self: center;">新型计算范式</span></div>
+</div>
+</div>
+</header>
+<main>
+<section class="section overview-section" id="overview">
+<div class="container overview-grid origin-layout">
+<article class="overview-card"><p class="kicker dark-kicker">ORIGIN STORY</p><h2>团队起源</h2><p>从一个人的代码痴迷，到一群少年的并肩奔赴，OptiYouth HPC Lab 的故事，是一场从未熄灭的“优化”热血长征。</p><p>这份执着的原点，是创始人边浩东老师在硕士时期向高性能计算（HPC）星辰大海的无畏远征。彼时，“优化少年”这一名字首次在赛场崭露头角，代表着对算力极限近乎偏执的追求；此后，这份热枕从竞技场的巅峰对决跨越到工业界的复杂实战，在知乎的深度沉淀中碰撞出智慧的火花，并最终回归高校，转化为薪火相传的使命感。</p><p>在 AI 重构世界的今天，算力已成为重塑文明的新质生产力。“优化少年”早已超越了一个代称，它演变为一种“向下深挖系统潜力、向上支撑智能未来”的极客图腾。2026 年 5 月 21 日，这段跨越八年时间执着追求的精神符号正式升华为 “OptiYouth HPC Lab”。</p><p>我们站在 AI 时代的潮头，致力于在每一行并行的代码中榨取算力红利，在每一个算法的迭代中构筑智能基石。这里不仅是极客的集结地，更是算力新纪元的瞭望塔——我们誓要以极致的优化，定义这个大算力时代的青春底色！</p></article>
+<aside class="origin-feature-grid"><article class="origin-feature-card"><h3>科研驱动</h3><p>围绕稀疏矩阵、科学计算软件、AI推理引擎等方向开展阅读、复现、实验与论文训练。</p></article><article class="origin-feature-card"><h3>工程实践</h3><p>重视 Linux、C/C++、Python、MPI、OpenMP、CUDA 等工具链训练，关注真实程序性能瓶颈。</p></article><article class="origin-feature-card"><h3>竞赛牵引</h3><p>通过 ASC、SolverChallenge、MCC、华为 ICT 等赛事训练赛题分析、调优与答辩能力。</p></article><article class="origin-feature-card"><h3>协同成长</h3><p>形成研究生与本科生协同推进的培养机制，鼓励跨年级合作、共同攻关。</p></article></aside></div>
+</section>
+<section class="section leader-section" id="leader">
+<div class="container leader-wrap">
+<div class="section-head on-dark"><p class="kicker">TEAM LEADER</p><h2>负责人</h2></div>
+<div class="leader-card">
+<div class="leader-photo"><img alt="边浩东" src="assets/images/teacher.jpg"/></div>
+<div class="leader-info">
+<p class="role">青海大学计算机技术与应用学院讲师 · 清华大学计算机科学与技术系博士</p>
+<h3>边浩东</h3>
+<ul class="leader-facts">
+<li>研究方向包括高性能计算、稀疏数值计算性能优化、大规模科学计算软件性能优化、类脑计算软件性能优化。</li>
+<li>获2024年青海省自然科学奖三等奖、2025年青海省教学成果奖一等奖。</li>
+<li>主持国家重点研发计划子课题、青海省昆仑英才·高端创新创业人才·拔尖人才项目、光合基金横向项目。</li>
+<li>相关成果以第一/通讯作者发表于 PPoPP、SPE、Euro-Par、CCGRID、FGCS 等CCF推荐国际会议与期刊。</li>
+</ul>
+<a class="homepage" href="https://bhd.qhu-hdacp.cn/" rel="noreferrer" target="_blank">访问个人主页 →</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="members">
+<div class="container">
+<div class="section-head center"><h2>团队成员</h2></div>
+<div class="member-tabs"><div class="member-group"><h3>研究生</h3><div class="member-grid"><article class="member-card"><img alt="任思谕" src="assets/images/ren.jpg"/><div class="member-body"><h4>任思谕</h4><p class="member-grade">研二</p><div class="member-pill-row"><span class="member-pill">算法优化</span><span class="member-pill">并行计算</span><span class="member-pill">求解器</span></div></div></article><article class="member-card"><img alt="薛凤" src="assets/images/xuefeng.jpg"/><div class="member-body"><h4>薛凤</h4><p class="member-grade">研一</p><div class="member-pill-row"><span class="member-pill">大模型</span><span class="member-pill">并行计算</span><span class="member-pill">系统优化</span></div></div></article><article class="member-card"><img alt="黄帅" src="assets/images/huang.jpg"/><div class="member-body"><h4>黄帅</h4><p class="member-grade">研0</p><div class="member-pill-row"><span class="member-pill">混合精度</span><span class="member-pill">求解器</span><span class="member-pill">并行计算</span></div></div></article></div></div><div class="member-group"><h3>本科生</h3><div class="member-grid"><article class="member-card"><img alt="吴匡正" src="assets/images/wukuangzheng.jpg"/><div class="member-body"><h4>吴匡正</h4><p class="member-grade">大四</p><div class="member-pill-row"><span class="member-pill">算法</span><span class="member-pill">求解器</span><span class="member-pill">并行计算</span></div></div></article><article class="member-card"><img alt="缪弘博" src="assets/images/miaohongbo.jpg"/><div class="member-body"><h4>缪弘博</h4><p class="member-grade">大三</p><div class="member-pill-row"><span class="member-pill">大模型</span><span class="member-pill">混合精度</span><span class="member-pill">并行计算</span></div></div></article><article class="member-card"><img alt="王佳" src="assets/images/wangjia.jpg"/><div class="member-body"><h4>王佳</h4><p class="member-grade">大三</p><div class="member-pill-row"><span class="member-pill">算法优化</span><span class="member-pill">求解器</span><span class="member-pill">混合精度</span></div></div></article></div></div></div>
+</div>
+</section>
+<section class="section directions" id="directions">
+<div class="container">
+<div class="section-head center on-dark"><p class="kicker">RESEARCH DIRECTIONS</p><h2>团队研究方向</h2></div>
+<div class="direction-grid">
+<article class="direction-card"><strong>01</strong><h3>稀疏数值计算性能优化</h3><p>面向 SpMV、迭代求解器、稀疏矩阵存储格式与负载均衡等问题，研究数据布局、SIMD、多核并行与运行时自适应优化方法。</p></article>
+<article class="direction-card"><strong>02</strong><h3>HPC/AI 应用软件优化</h3><p>针对科学计算、图像重建、量子模拟、AI 应用等软件，开展热点分析、并行重构、GPU/CPU 协同优化和可扩展性评测。</p></article>
+<article class="direction-card"><strong>03</strong><h3>类脑芯片软件栈开发优化</h3><p>面向类脑计算芯片与 SNN 计算模型，探索编译框架、仿真工具、运行时系统与基础软件栈的性能优化。</p></article>
+<article class="direction-card"><strong>04</strong><h3>Agent 大模型推理引擎性能优化</h3><p>关注大模型推理服务、Agent 执行链、混合精度、缓存管理、调度策略与端到端延迟优化，提升智能应用运行效率。</p></article>
+</div>
+</div>
+</section>
+<section class="section" id="research">
+<div class="container">
+<div class="section-head center"><h2>科研项目与学术成果</h2><p style="font-size: 12pt;">重点项目和代表性论文</p></div>
+<div class="research-grid"><article class="list-card"><div class="card-head"><span class="card-pill">PROJECTS</span><h3>科研项目</h3><p>围绕并行智能计算、异构平台优化与学生科研训练，形成项目驱动的训练模式。</p></div><ul class="item-list"><li class="project-item"><div class="project-main"><b>国家重点研发计划（子课题）</b><span>面向高分辨区域模式的高可扩展并行及智能计算技术</span><small>主持｜45万元｜2023.12 - 2026.12</small></div><span class="status-badge status-ongoing">在研</span></li><li class="project-item"><div class="project-main"><b>青海省昆仑英才 · 高端创新创业人才项目</b><span>培养拔尖人才项目</span><small>主持｜20万元｜2025.03 - 2028.03</small></div><span class="status-badge status-ongoing">在研</span></li><li class="project-item"><div class="project-main"><b>中科曙光-光合基金横向项目</b><span>异构平台 QuEST 量子计算模拟器移植优化研究</span><small>主持｜8万元｜2024.07 - 2025.12</small></div><span class="status-badge status-done">结项</span></li></ul></article><article class="list-card paper-section-card">
+    <div class="card-head">
+        <span class="card-pill">PUBLICATIONS</span><h3>学术论文（近3年）</h3>
+    </div>
+    <ul class="homepage-paper-list">
+        <li class="homepage-paper-item">
+            <h4>PANA: A Fine-Grained Runtime-Adaptive Load Balancing for Parallel SpMV on Multicore CPUs</h4>
+            <p class="paper-authors"><strong>Haodong Bian</strong>, Youhui Zhang, Xiang Fei, Jianqiang Huang, Xiaoying Wang.</p>
+            <div class="paper-tags-line">
+                <span class="pub-tag tag-ccfa">CCF-A</span>
+                <span class="paper-venue">PPoPP 2026</span>
+            </div>
+        </li>
+        <li class="homepage-paper-item">
+            <h4>GWBP: Accelerating Weighted Back-Projection for Image Reconstruction via Efficient GPU Parallel Optimization</h4>
+            <p class="paper-authors">Hongbo Miao, <strong>Haodong Bian*</strong>.</p>
+            <div class="paper-tags-line">
+                <span class="pub-tag tag-ccfb">CCF-B</span>
+                <span class="paper-venue">Euro-Par 2026</span>
+            </div>
+        </li>
+        <li class="homepage-paper-item">
+            <h4>OSOW: A Resource-Efficient Parallelization of the Winograd Algorithm on Multicore CPUs</h4>
+            <p class="paper-authors">Siyu Ren, <strong>Haodong Bian*</strong>, Feng Xue, Xiaoying Wang.</p>
+            <div class="paper-tags-line">
+                <span class="pub-tag tag-ccfc">CCF-C</span>
+                <span class="paper-venue">KSEM 2026</span>
+            </div>
+        </li>
+        <li class="homepage-paper-item">
+            <h4>Research on Parallel Weighted Back-Projection Algorithm on Multi-CPU</h4>
+            <p class="paper-authors">Kaige Zheng, Kuangzheng Wu, Yu Yao, <strong>Haodong Bian*</strong>, Jianqiang Huang, Xiaoying Wang.</p>
+            <div class="paper-tags-line">
+                <span class="pub-tag tag-ccfc">CCF-C</span>
+                <span class="paper-venue">ICIC 2025</span>
+            </div>
+        </li>
+    </ul>
+</div>
+</section>
+<section class="section competition" id="competition">
+<div class="container">
+<div class="section-head on-dark"><p class="kicker">DISCIPLINE COMPETITIONS</p><h2>学科竞赛</h2><p>团队通过高水平赛事检验训练成果，在赛题分析、方案设计、程序优化等环节中持续提升。</p></div>
+<div class="award-grid"><article class="award-card first"><img alt="2026 华为 ICT 大赛中国总决赛全国二等奖" src="assets/images/huawei2026.png"/><div><small>Huawei ICT 2026</small><h3>华为 ICT 大赛中国总决赛</h3><p>全国二等奖</p></div></article><article class="award-card"><img alt="2025 SolverChallenge 全国二等奖" src="assets/images/solver2025.jpg"/><div><small>SolverChallenge 2025</small><h3>第五届线性解法器竞赛</h3><p>全国二等奖</p></div></article><article class="award-card"><img alt="2025 先导杯全国三等奖" src="assets/images/xiandao2025.png"/><div><small>先导杯 2025</small><h3>智能计算创新设计赛</h3><p>全国三等奖</p></div></article><article class="award-card"><img alt="2024 团体程序设计天梯赛全国二等奖" src="assets/images/tianti2024.png"/><div><small>天梯赛 2024</small><h3>团体程序设计天梯赛全国总决赛</h3><p>全国二等奖</p></div></article><article class="award-card"><img alt="2024 ASC 全球一等奖" src="assets/images/asc2024.jpg"/><div><small>ASC 2024</small><h3>世界大学生超级计算竞赛</h3><p>全球/全国一等奖</p></div></article><article class="award-card"><img alt="2024 MCC 全国二等奖" src="assets/images/mcc2024.jpg"/><div><small>MCC 2024</small><h3>海洋计算挑战赛全国总决赛</h3><p>全国二等奖（亚军）</p></div></article><article class="award-card"><img alt="2024 SolverChallenge 全国三等奖" src="assets/images/solver2024.jpg"/><div><small>SolverChallenge 2024</small><h3>第四届线性解法器竞赛</h3><p>全国三等奖</p></div></article><article class="award-card"><img alt="2024 开放原子大赛 Tecorigin 算子开发任务挑战赛全国三等奖" src="assets/images/openatom2024.png"/><div><small>OpenAtom 2024</small><h3>Tecorigin 算子开发任务挑战赛</h3><p>全国三等奖</p></div></article><article class="award-card"><img alt="2023 ICPC 全国金奖" src="assets/images/icpc2023.jpg"/><div><small>ICPC 2023</small><h3>China Silk Road Invitational</h3><p>全国金奖</p></div></article><article class="award-card"><img alt="2022 PAC 全国并行应用挑战赛全国二等奖（前三）" src="assets/images/pac2022.jpg"/><div><small>PAC 2022</small><h3>“英特尔”杯全国并行应用挑战赛</h3><p>全国二等奖（前三）</p></div></article><article class="award-card"><img alt="2021 先导杯计算应用大奖赛全国入围奖（前八）" src="assets/images/pioneer2021.png"/><div><small>先导杯 2021</small><h3>第二届“先导杯”计算应用大奖赛</h3><p>全国入围奖（前八）</p></div></article></div>
+</div>
+</section>
+<section class="section" id="partners">
+<div class="container">
+<div class="section-head center"><p class="kicker dark-kicker">COLLABORATION</p><h2>合作单位 / 团队</h2><p style="font-size: 12pt;">面向高性能计算、类脑计算与基础软件生态，持续拓展交流合作</p></div>
+<div class="partners">
+<article class="partner-card"><div class="partner-icon">CRAFT<br/>Lab</div><div><h3>THU CRAFT 实验室</h3><p>清华大学计算机系团队，关注处理器微体系结构、类脑计算、基础软件、高性能计算等方向。</p><a href="https://craft.cs.tsinghua.edu.cn/" rel="noreferrer" target="_blank">访问 CRAFT Lab →</a></div></article>
+<article class="partner-card"><div class="partner-icon partner-logo"><img alt="国家超级计算无锡中心图标" src="assets/images/wuxi.png"/></div><div><h3>国家超级计算无锡中心</h3><p>国家级超算平台与应用支撑单位，为高性能计算应用、并行优化和算力实践提供重要生态支撑。</p></div></article>
+</div>
+</div>
+</section>
+<section class="section" id="contact">
+<div class="container final-grid"><div class="section-head center"><p class="kicker dark-kicker">TEAM BUILDING</p><h2>团队建设 / 招新要求</h2></div>
+<article class="goal-contact"><p class="kicker dark-kicker">GOALS</p><h3>团队建设目标</h3><ul>
+<li><b>学术：</b>围绕高性能计算、绿色算力、系统优化和科学计算开展论文阅读、实验复现和学术写作训练。</li>
+<li><b>竞赛：</b>持续参与 ASC、SolverChallenge、MCC、华为 ICT 等赛事，提升方案设计、性能调优和答辩表达能力。</li>
+<li><b>专业技能：</b>强化 Linux 集群环境管理、C/C++/Python 高性能程序开发、MPI/OpenMP 异构并行编程、性能瓶颈剖析与系统调优、科研工程文档撰写及大型超算项目协作能力。</li>
+</ul></article>
+<article class="goal-contact contact-card"><p class="kicker">CONTACT</p><h3>联系方式与招新要求</h3><ul>
+<li><b>联系邮箱：</b><a href="mailto:optiyouth_hpc@163.com">optiyouth_hpc@163.com</a></li>
+<li><b>招新对象：</b>对 HPC、AI 系统、科学计算、算法优化和系统调优感兴趣的本科生（面向青海大学）与研究生（已录取的准研究生）。</li>
+<li><b>基本要求：</b>态度严谨、耐心细致，积极配合指导教师的科研安排，具备长期深耕科研领域的意愿，愿意跟随导师开展系统性学习与科研实践。</li>
+</ul></article>
+</div>
+</section>
+</main>
+<footer class="footer"><div class="container footer-inner"><div><strong>OptiYouth HPC Lab</strong> <p>&copy; 2020-<span id="year" style="font-size: 12pt; color: rgb(175, 200, 247);"></span> &nbsp; Bian Haodong · Qinghai University，Current Time：<span id="real-time">正在加载...</span></p> </div><a href="#top">返回顶部 ↑</a></div></footer>
+
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>   
+</body>
+</html>
