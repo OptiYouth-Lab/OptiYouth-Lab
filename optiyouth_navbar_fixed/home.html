@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OptiYouth HPC Lab | Qinghai University</title>
+<link href="styles.css" rel="stylesheet"/>
+<style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            width: 100%;
+            background-color: #192b45;
+            padding: 16px 0;
+            border-bottom: none;
+        }
+
+        .nav-inner {
+            max-width: 1280px;
+            width: min(92%,1280px);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .brand-mark {
+            width: 40px;
+            height: 40px;
+            background: #283c60;
+            color: #c6e0ff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+            .nav-links a {
+                color: #c6e0ff;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+                .nav-links a:hover {
+                    opacity: 0.8;
+                }
+
+        .footer {
+            margin-top: 80px;
+            padding: 25px 0;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #666;
+        }
+        /* 原图深蓝渐变背景 */
+        body {
+            margin: 0;
+            background: linear-gradient(120deg, #041732, #153866);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        .hero-wrap {
+            position: relative;
+            min-height: 92vh;
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+        }
+        /* 半透明空心圆环 整体左移 */
+        .circle-bg-1 {
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            border: 2px solid rgba(80, 140, 210, 0.18);
+            background: transparent;
+            right: 160px; /* 原80px，加大数值向左挪 */
+            top: 20%;
+            z-index: 1;
+        }
+
+        .circle-bg-2 {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            border: 1px solid rgba(60, 120, 190, 0.12);
+            background: transparent;
+            right: 240px; /* 原160px，加大数值向左挪 */
+            top: 28%;
+            z-index: 1;
+        }
+        /* 左侧文字向中间偏移 */
+        .left-content {
+            position: relative;
+            z-index: 3;
+            flex: 1;
+            padding-left: 90px;
+        }
+
+        .right-cards-group {
+            position: relative;
+            z-index: 3;
+            flex: 1;
+            height: 600px;
+            left: 80px; /* 整体容器左移 */
+        }
+        /* 磨砂卡片浅蓝通透质感 */
+        .glass-card {
+            background: rgba(130, 190, 240, 0.14);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 20px 26px;
+            position: absolute;
+        }
+
+        .card-top {
+            top: 20px;
+            left: 60px;
+        }
+        /* 中间卡片加宽 */
+        .card-middle {
+            top: 130px;
+            left: 100px;
+            width: 260px;
+        }
+        /* 底部卡片向上移动 */
+        .card-bottom {
+            bottom: 100px;
+            left: 140px;
+        }
+        /* 文字样式 */
+        .left-content h1 {
+            font-size: 68px;
+            line-height: 1;
+            margin: 0 0 14px;
+        }
+
+        .left-content h2 {
+            font-size: 27px;
+            font-weight: normal;
+            margin: 0 0 22px;
+            line-height: 1.4;
+        }
+
+        .left-content p {
+            font-size: 17px;
+            line-height: 1.7;
+            opacity: 0.92;
+            max-width: 630px;
+            margin-bottom: 40px;
+        }
+        /* 跳转按钮 */
+        .btn-group a {
+            text-decoration: none;
+            font-size: 16px;
+            padding: 15px 34px;
+            border-radius: 999px;
+            margin-right: 14px;
+            display: inline-block;
+        }
+
+        .btn-origin {
+            background: #f8cf6e;
+            color: #041732;
+            font-weight: bold;
+        }
+
+        .btn-comp {
+            background: rgba(255,255,255,0.11);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #fff;
+        }
+
+        .glass-card h4 {
+            margin: 0 0 6px;
+            font-size: 23px;
+        }
+
+        .glass-card p {
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.85;
+        }
+
+        .glass-card li {
+            list-style: none;
+            margin: 9px 0;
+            font-size: 16px;
+            padding: 0;
+        }
+        /* 导航栏 */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+       
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 15px;
+            opacity: 0.9;
+        }
+    
+
+/* unified homepage navigation */
+.nav{
+  width:100% !important;
+  display:flex !important;
+  justify-content:space-between !important;
+  align-items:center !important;
+  padding:20px 60px !important;
+  background:#192b45 !important;
+  border-bottom:none !important;
+  box-sizing:border-box !important;
+  position:relative !important;
+  top:auto !important;
+  z-index:50 !important;
+}
+.nav .brand{
+  display:flex !important;
+  align-items:center !important;
+  gap:10px !important;
+  color:#fff !important;
+  text-decoration:none !important;
+}
+
+    .nav .brand-mark {
+        width: 42px !important;
+        height: 42px !important;
+        background: transparent !important;
+        border-radius: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+
+        .nav .brand-mark svg {
+            width: 42px !important;
+            height: 42px !important;
+            display: block !important;
+        }
+
+.nav .nav-links{
+  display:flex !important;
+  gap:0 !important;
+  align-items:center !important;
+}
+.nav .nav-links a{
+  color:#fff !important;
+  text-decoration:none !important;
+  margin-left:22px !important;
+  font-size:15px !important;
+  opacity:0.9 !important;
+  font-weight:400 !important;
+}
+.nav .nav-links a:hover{opacity:0.8 !important;color:#fff !important;}
+@media(max-width:900px){
+  .nav{padding:18px 24px !important;}
+  .nav .nav-links{display:none !important;}
+}
+</style>
+</head>
+<body>
+<!-- 顶部导航 -->
+<nav class="nav">
+<a class="brand" href="home.html">
+    <span class="brand-mark">
+        <svg width="42" height="42" viewBox="0 0 100 100">
+            <!-- 圆角深蓝方块，金色边框+金色OY -->
+            <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
+            <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
+        </svg>
+    </span>
+<div>
+<div>OptiYouth HPC Lab</div>
+<div style="font-size:13px;opacity:0.8;">Qinghai University</div>
+</div>
+</a>
+<div class="nav-links">
+<a href="subpage/subpages/overview.html">团队起源</a>
+<a href="subpage/subpages/leader.html">负责人</a>
+<a href="subpage/subpages/member.html">团队成员</a>
+<a href="subpage/subpages/direction.html">研究方向</a>
+<a href="subpage/subpages/research.html">科研成果</a>
+<a href="subpage/subpages/competition.html">学科竞赛</a>
+<a href="subpage/subpages/collaboration.html">合作交流</a>
+<a href="subpage/subpages/building.html">团队建设</a>
+</div>
+</nav>
+<section class="hero-wrap">
+<!-- 两个空心半透明圆环 -->
+<div class="circle-bg-1"></div>
+<div class="circle-bg-2"></div>
+<div class="left-content">
+<h1>OptiYouth<br/>HPC Lab</h1>
+<h2>面向稀疏计算、类脑计算、HPC/AI应用软件性能优化的团队</h2>
+<p>我们以国家级科研项目、高质量学术论文和学科竞赛为牵引，聚焦稀疏数值计算、HPC/AI应用软件、类脑芯片软件栈与大模型推理引擎优化，培养能够解决真实系统性能问题的青年人才。</p>
+<div class="btn-group">
+<a class="btn-origin" href="overview.html">了解起源</a>
+<a class="btn-comp" href="competition.html">查看竞赛成果</a>
+</div>
+</div>
+<div class="right-cards-group">
+<div class="glass-card card-top">
+<h4>HPC</h4>
+<p>Parallel · Scalable · Efficient</p>
+</div>
+<!-- 加宽后的中间卡片 -->
+<div class="glass-card card-middle">
+<div style="display:flex;gap:6px;margin-bottom:12px;">
+<span style="width:12px;height:12px;border-radius:50%;background:#ffd066;"></span>
+<span style="width:12px;height:12px;border-radius:50%;background:#66d2ff;"></span>
+<span style="width:12px;height:12px;border-radius:50%;background:#88ddaa;"></span>
+</div>
+<li>Sparse Kernels</li>
+<li>HPC / AI Software</li>
+<li>Neuromorphic Stack</li>
+<li>LLM Inference Engine</li>
+<li>Performance Tuning</li>
+</div>
+<!-- 向上移动后的底部卡片 -->
+<div class="glass-card card-bottom">
+<h4>Brain-inspired Computing</h4>
+<p>新型计算范式</p>
+</div>
+</div>
+</section>
+<footer style="padding:30px 60px;opacity:0.7;font-size:14px;">
+<span>OptiYouth HPC Lab © 2026 青海大学 | 当前时间：<span id="time"></span></span>
+</footer>
+<script>
+        function timeUpdate() {
+            let now = new Date();
+            document.getElementById("time").innerText = now.toLocaleString("zh-CN");
+        }
+        timeUpdate();
+        setInterval(timeUpdate, 1000);
+    </script>
+</body>
+</html>
