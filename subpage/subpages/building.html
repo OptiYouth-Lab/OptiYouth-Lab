@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../styles.css" rel="stylesheet"/>
+<title>团队建设 / 招新 | OptiYouth HPC Lab Qinghai University</title>
+<style>
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin: 50px 0 40px;
+        }
+
+        .page-sub-en {
+            font-size: 18px;
+            color: #777;
+            letter-spacing: 2px;
+            margin: 0 0 10px;
+        }
+
+        .main-title {
+            font-size: 50px;
+            font-weight: bold;
+            color: #111;
+            margin: 0 0 14px;
+        }
+        /* 左右双栏容器 */
+        .two-column-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        /* 左侧白色板块 */
+        .col-left {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+            .col-left .small-title {
+                color: #406099;
+                font-size: 14px;
+                letter-spacing: 1px;
+                margin: 0 0 12px;
+            }
+
+            .col-left h2 {
+                font-size: 32px;
+                margin: 0 0 30px;
+            }
+
+        .goal-item {
+            background: #f6f7f9;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+            .goal-item:last-child {
+                margin-bottom: 0;
+            }
+
+            .goal-item strong {
+                font-weight: bold;
+            }
+        /* 右侧深蓝色板块 */
+        .col-right {
+            background: #0a2545;
+            border-radius: 20px;
+            padding: 30px;
+            color: #fff;
+        }
+
+            .col-right .small-title {
+                color: #f2d088;
+                font-size: 14px;
+                letter-spacing: 1px;
+                margin: 0 0 12px;
+            }
+
+            .col-right h2 {
+                font-size: 32px;
+                margin: 0 0 30px;
+            }
+
+        .contact-item {
+            background: rgba(255,255,255,0.12);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+            .contact-item:last-child {
+                margin-bottom: 0;
+            }
+
+            .contact-item strong {
+                color: #f9d896;
+                font-weight: bold;
+            }
+        /* 导航栏统一样式 */
+        .nav {
+            padding: 18px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            text-decoration: none;
+            color: #111;
+        }
+
+
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+            .nav-links a {
+                color: #222;
+                text-decoration: none;
+                font-size: 15px;
+            }
+
+                .nav-links a:hover {
+                    color: #0055cc;
+                }
+        /* 页脚 */
+        .footer {
+            margin-top: 80px;
+            padding: 25px 0;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #666;
+        }
+    
+
+/* unified homepage navigation */
+.nav{
+  width:100% !important;
+  display:flex !important;
+  justify-content:space-between !important;
+  align-items:center !important;
+  padding:20px 60px !important;
+  background:#192b45 !important;
+  border-bottom:none !important;
+  box-sizing:border-box !important;
+  position:relative !important;
+  top:auto !important;
+  z-index:50 !important;
+}
+.nav .brand{
+  display:flex !important;
+  align-items:center !important;
+  gap:10px !important;
+  color:#fff !important;
+  text-decoration:none !important;
+}
+    .nav .brand-mark {
+        width: 42px !important;
+        height: 42px !important;
+        background: transparent !important;
+        border-radius: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+
+        .nav .brand-mark svg {
+            width: 42px !important;
+            height: 42px !important;
+            display: block !important;
+        }
+.nav .nav-links{
+  display:flex !important;
+  gap:0 !important;
+  align-items:center !important;
+}
+.nav .nav-links a{
+  color:#fff !important;
+  text-decoration:none !important;
+  margin-left:22px !important;
+  font-size:15px !important;
+  opacity:0.9 !important;
+  font-weight:400 !important;
+}
+.nav .nav-links a:hover{opacity:0.8 !important;color:#fff !important;}
+@media(max-width:900px){
+  .nav{padding:18px 24px !important;}
+  .nav .nav-links{display:none !important;}
+}
+</style>
+</head>
+<body>
+<!-- 全站统一导航栏 -->
+<nav class="nav">
+<a class="brand" href="../../home.html">
+    <span class="brand-mark">
+        <svg width="42" height="42" viewBox="0 0 100 100">
+            <!-- 纯圆角方形，无外层圆形 -->
+            <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
+            <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
+        </svg>
+    </span>
+<div>
+<div>OptiYouth HPC Lab</div>
+<div style="font-size:13px;opacity:0.8;">Qinghai University</div>
+</div>
+</a>
+<div class="nav-links">
+<a href="../../subpage/subpages/overview.html">团队起源</a>
+<a href="../../subpage/subpages/leader.html">负责人</a>
+<a href="../../subpage/subpages/member.html">团队成员</a>
+<a href="../../subpage/subpages/direction.html">研究方向</a>
+<a href="../../subpage/subpages/research.html">科研成果</a>
+<a href="../../subpage/subpages/competition.html">学科竞赛</a>
+<a href="../../subpage/subpages/collaboration.html">合作交流</a>
+<a href="../../subpage/subpages/building.html">团队建设</a>
+</div>
+</nav>
+<main class="container">
+<div class="page-header">
+<p class="page-sub-en">TEAM BUILDING</p>
+<h1 class="main-title">团队建设 / 招新要求</h1>
+</div>
+<!-- 左右双栏布局 -->
+<div class="two-column-wrap">
+<!-- 左侧：团队建设目标 -->
+<div class="col-left">
+<p class="small-title">GOALS</p>
+<h2>团队建设目标</h2>
+<div class="goal-item">
+<p><strong>学术：</strong>围绕高性能计算、绿色算力、系统优化和科学计算开展论文阅读、实验复现和学术写作训练。</p>
+</div>
+<div class="goal-item">
+<p><strong>竞赛：</strong>持续参与ASC、SolverChallenge、MCC、华为ICT等赛事，提升方案设计、性能调优和答辩表达能力。</p>
+</div>
+<div class="goal-item">
+<p><strong>专业技能：</strong>强化Linux集群环境管理、C/C++/Python高性能程序开发、MPI/OpenMP异构并行编程、性能瓶颈剖析与系统调优、科研工程文档撰写及大型超算项目协作能力。</p>
+</div>
+</div>
+<!-- 右侧：联系方式与招新要求 -->
+<div class="col-right">
+<p class="small-title">CONTACT</p>
+<h2>联系方式与招新要求</h2>
+<div class="contact-item">
+<strong>联系邮箱：</strong>optiyouth_hpc@163.com
+                </div>
+<div class="contact-item">
+<strong>招新对象：</strong>对HPC、AI系统、科学计算、算法优化感兴趣的本科生（面向青海大学）与研究生（已录取准研究生）。
+                </div>
+<div class="contact-item">
+<strong>基本要求：</strong>态度严谨、耐心细致，积极配合指导教师的科研安排，具备长期深耕科研领域的意愿，愿意跟随导师开展系统性学习与科研实践。
+                </div>
+</div>
+</div>
+</main>
+<footer class="footer">
+<div>
+<strong>OptiYouth HPC Lab Qinghai University</strong>
+<p>© 2020-2026 边浩东 | 当前时间：<span id="time"></span></p>
+<a href="../../home.html">返回首页 ↑</a>
+</div>
+</footer>
+<script>
+        function updateTime() {
+            let now = new Date();
+            document.getElementById("time").innerText = now.toLocaleString("zh-CN", { hour12: false });
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
