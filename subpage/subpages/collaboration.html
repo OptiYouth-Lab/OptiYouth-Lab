@@ -7,6 +7,10 @@
 <link href="../styles.css" rel="stylesheet"/>
 <title>合作与交流 | OptiYouth HPC Lab Qinghai University</title>
 <style>
+    /* 仅在当前页面给页脚加上上边距 */
+    .footer {
+        margin-top: 80px !important;
+    }
         .container {
             max-width: 1280px;
             margin: 0 auto;
@@ -153,14 +157,7 @@
             font-size: 46px;
             font-weight: bold;
         }
-        /* 页脚 */
-        .footer {
-            margin-top: 80px;
-            padding: 25px 0;
-            border-top: 1px solid #eee;
-            text-align: center;
-            color: #666;
-        }
+
     
 
 /* unified homepage navigation */
@@ -222,75 +219,92 @@
 </style>
 </head>
 <body>
-<!-- 顶部导航 -->
-<nav class="nav">
-<a class="brand" href="../../index.html">
-    <span class="brand-mark">
-        <svg width="42" height="42" viewBox="0 0 100 100">
-            <!-- 纯圆角方形，无外层圆形 -->
-            <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
-            <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
-        </svg>
-    </span>
-<div>
-<div>OptiYouth HPC Lab</div>
-<div style="font-size:13px;opacity:0.8;">Qinghai University</div>
-</div>
-</a>
-<div class="nav-links">
-<a href="../../subpage/subpages/overview.html">团队起源</a>
-<a href="../../subpage/subpages/leader.html">负责人</a>
-<a href="../../subpage/subpages/member.html">团队成员</a>
-<a href="../../subpage/subpages/direction.html">研究方向</a>
-<a href="../../subpage/subpages/research.html">科研成果</a>
-<a href="../../subpage/subpages/competition.html">学科竞赛</a>
-<a href="../../subpage/subpages/collaboration.html">合作交流</a>
-<a href="../../subpage/subpages/building.html">团队建设</a>
-</div>
-</nav>
-<main class="container">
-<div class="page-header">
-<p class="page-sub-en">COLLABORATION</p>
-<h1 class="main-title">合作与交流</h1>
-<p class="page-desc">面向高性能计算、类脑计算与基础软件生态，持续拓展交流合作</p>
-</div>
-<div class="coop-wrap">
-<div class="coop-card">
-<div class="logo-box craft-logo">
-<span>CRAFT</span>
-<span>Lab</span>
-</div>
-<div class="coop-info">
-<h3>THU CRAFT 实验室</h3>
-<p>清华大学计算机系团队，关注处理器微体系结构、类脑计算、基础软件、高性能计算等方向。</p>
-<a class="coop-link" href="https://craft.cs.tsinghua.edu.cn/" target="_blank">访问 CRAFT Lab →</a>
-</div>
-</div>
-<div class="coop-card">
-<div class="logo-box wuxi-logo">
-<img alt="国家超级计算无锡中心" src="../assets/images/wuxi.png"/>
-</div>
-<div class="coop-info">
-<h3>国家超级计算无锡中心</h3>
-<p>国家级超算平台与应用支撑单位，为高性能计算应用、并行优化和算力实践提供重要生态支撑。</p>
-</div>
-</div>
-</div>
-</main>
-<footer class="footer">
-<div>
-<strong>OptiYouth HPC Lab Qinghai University</strong>
-<p>© 2020-2026 边浩东 | 当前时间：<span id="time"></span></p>
-<a href="../../index.html">返回首页 ↑</a>
-</div>
-</footer>
-<script>
-        function updateTime() {
-            let now = new Date();
-            document.getElementById("time").innerText = now.toLocaleString("zh-CN", { hour12: false });
-        }
-        updateTime();
-        setInterval(updateTime, 1000);
+    <!-- 顶部导航 -->
+    <nav class="nav">
+        <a class="brand" href="../../index.html">
+            <span class="brand-mark">
+                <svg width="42" height="42" viewBox="0 0 100 100">
+                    <!-- 纯圆角方形，无外层圆形 -->
+                    <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
+                    <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
+                </svg>
+            </span>
+            <div>
+                <div>OptiYouth HPC Lab</div>
+                <div style="font-size:13px;opacity:0.8;">Qinghai University</div>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="../../subpage/subpages/overview.html">团队起源</a>
+            <a href="../../subpage/subpages/leader.html">负责人</a>
+            <a href="../../subpage/subpages/member.html">团队成员</a>
+            <a href="../../subpage/subpages/direction.html">研究方向</a>
+            <a href="../../subpage/subpages/research.html">科研成果</a>
+            <a href="../../subpage/subpages/competition.html">学科竞赛</a>
+            <a href="../../subpage/subpages/awards.html">奖励荣誉</a>
+            <a href="../../subpage/subpages/collaboration.html">合作交流</a>
+            <a href="../../subpage/subpages/building.html">团队建设</a>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="page-header">
+            <p class="page-sub-en">COLLABORATION</p>
+            <h1 class="main-title">合作与交流</h1>
+            <p class="page-desc">面向高性能计算、类脑计算与基础软件生态，持续拓展交流合作</p>
+        </div>
+        <div class="coop-wrap">
+            <div class="coop-card">
+                <div class="logo-box craft-logo">
+                    <span>CRAFT</span>
+                    <span>Lab</span>
+                </div>
+                <div class="coop-info">
+                    <h3>THU CRAFT 实验室</h3>
+                    <p>清华大学计算机系团队，关注处理器微体系结构、类脑计算、基础软件、高性能计算等方向。</p>
+                    <a class="coop-link" href="https://craft.cs.tsinghua.edu.cn/" target="_blank">访问 CRAFT Lab →</a>
+                </div>
+            </div>
+            <div class="coop-card">
+                <div class="logo-box wuxi-logo">
+                    <img alt="国家超级计算无锡中心" src="../assets/images/wuxi.png" />
+                </div>
+                <div class="coop-info">
+                    <h3>国家超级计算无锡中心</h3>
+                    <p>国家级超算平台与应用支撑单位，为高性能计算应用、并行优化和算力实践提供重要生态支撑。</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 替换为你页脚的全部内容 -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>OptiYouth HPC Lab</strong>
+                <span>© 2020-   Bian Haodong · Qinghai University，Current Time：<span id="current-time">正在加载...</span></span>
+            </div>
+            <a href="../../index.html">返回首页 ↑</a>
+        </div>
+    </footer>
+    <script data-optiyouth-time="true">
+        (function () {
+            function updateCurrentTime() {
+                var el = document.getElementById('current-time');
+                if (!el) return;
+                var now = new Date();
+                var text = now.toLocaleString('zh-CN', {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: false
+                });
+                el.textContent = text;
+            }
+            updateCurrentTime();
+            setInterval(updateCurrentTime, 1000);
+        })();
     </script>
 </body>
 </html>

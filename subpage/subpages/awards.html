@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../styles.css" rel="stylesheet"/>
+<title>奖励荣誉 | OptiYouth HPC Lab Qinghai University</title>
+<style>
+    /* unified homepage navigation */
+    .nav {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 20px 60px !important;
+        background: #192b45 !important;
+        border-bottom: none !important;
+        box-sizing: border-box !important;
+        position: relative !important;
+        top: auto !important;
+        z-index: 50 !important;
+    }
+
+        .nav .brand {
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            color: #fff !important;
+            text-decoration: none !important;
+        }
+
+        .nav .brand-mark {
+            width: 42px !important;
+            height: 42px !important;
+            background: transparent !important;
+            border-radius: 0 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            border: none !important;
+            padding: 0 !important;
+        }
+
+            .nav .brand-mark svg {
+                width: 42px !important;
+                height: 42px !important;
+                display: block !important;
+            }
+
+        .nav .nav-links {
+            display: flex !important;
+            gap: 0 !important;
+            align-items: center !important;
+        }
+
+            .nav .nav-links a {
+                color: #fff !important;
+                text-decoration: none !important;
+                margin-left: 22px !important;
+                font-size: 15px !important;
+                opacity: 0.9 !important;
+                font-weight: 400 !important;
+            }
+
+                .nav .nav-links a:hover {
+                    opacity: 0.8 !important;
+                    color: #fff !important;
+                }
+
+    @media(max-width:900px) {
+        .nav {
+            padding: 18px 24px !important;
+        }
+
+            .nav .nav-links {
+                display: none !important;
+            }
+    }
+
+
+    /* 统一页脚排版 */
+    .footer {
+        background: #020A18 !important;
+        color: #AFC3E8 !important;
+        padding: 34px 0 !important;
+        margin-top: 80px !important;
+    }
+
+        .footer .footer-inner {
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+        }
+
+        .footer a {
+            color: #D8B970 !important;
+            font-weight: 900 !important;
+            text-decoration: none !important;
+        }
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .page-header {
+        text-align: center;
+        margin: 50px 0 40px;
+    }
+
+    .page-sub-en {
+        font-size: 18px;
+        color: #777;
+        letter-spacing: 2px;
+        margin: 0 0 10px;
+    }
+
+    .main-title {
+        font-size: 50px;
+        font-weight: bold;
+        color: #111;
+        margin: 0 0 14px;
+    }
+
+    /* 表格模块包裹 */
+    .section-title {
+        font-size: 26px;
+        font-weight: bold;
+        color: #0a2545;
+        margin: 40px 0 20px 0;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #dce3ed;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .table-card {
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 18px 48px rgba(7, 21, 40, 0.08);
+        overflow: hidden;
+        margin-bottom: 40px;
+    }
+
+    .award-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 16px;
+    }
+
+        .award-table th {
+            background: #0f2852;
+            color: #ffffff;
+            padding: 18px 20px;
+            font-weight: 600;
+        }
+
+    .award-table th:first-child {
+        width: 12%;
+        text-align: center;
+    }
+    .award-table th:nth-child(2) {
+        width: 40%;
+    }
+    .award-table th:nth-child(3) {
+        width: 20%;
+        text-align: center;
+    }
+    .award-table th:last-child {
+        width: 28%;
+        text-align: center;
+    }
+
+    .award-table td {
+        padding: 16px 20px;
+        border-bottom: 1px solid #f0f3f8;
+        color: #333;
+    }
+
+    .award-table tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    .award-table td:first-child,
+    .award-table td:nth-child(3),
+    .award-table td:last-child {
+        text-align: center;
+    }
+
+    .award-table .row-num {
+        color: #1c5bd6;
+        font-weight: bold;
+    }
+
+    /* 荣誉标签 */
+    .badge {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 99px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .badge-orange {
+        background: #fcebd9;
+        color: #b35507;
+    }
+    .badge-yellow {
+        background: #fef5d4;
+        color: #8b6404;
+    }
+
+    @media (max-width: 720px) {
+        .award-table {
+            font-size: 14px;
+        }
+        .award-table th,
+        .award-table td {
+            padding: 12px 10px;
+        }
+    }
+</style>
+</head>
+<link href="../../styles.css?v=2.0" rel="stylesheet" />
+<body>
+    <nav class="nav">
+        <a class="brand" href="../../index.html">
+            <span class="brand-mark">
+                <svg width="42" height="42" viewBox="0 0 100 100">
+                    <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
+                    <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
+                </svg>
+            </span>
+            <div>
+                <div>OptiYouth HPC Lab</div>
+                <div style="font-size:13px;opacity:0.8;">Qinghai University</div>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="../../subpage/subpages/overview.html">团队起源</a>
+            <a href="../../subpage/subpages/leader.html">负责人</a>
+            <a href="../../subpage/subpages/member.html">团队成员</a>
+            <a href="../../subpage/subpages/direction.html">研究方向</a>
+            <a href="../../subpage/subpages/research.html">科研成果</a>
+            <a href="../../subpage/subpages/competition.html">学科竞赛</a>
+            <a href="../../subpage/subpages/awards.html">奖励荣誉</a>
+            <a href="../../subpage/subpages/collaboration.html">合作交流</a>
+            <a href="../../subpage/subpages/building.html">团队建设</a>
+            <!-- 新增的导航项 -->
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <p class="page-sub-en">AWARDS & HONORS</p>
+                <h1 class="main-title">奖励荣誉</h1>
+            </div>
+
+            <!-- 科教奖励 -->
+            <h2 class="section-title">科教奖励</h2>
+            <div class="table-card">
+                <table class="award-table">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>奖励/荣誉名称</th>
+                            <th>获奖年份</th>
+                            <th>等级/称号</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="row-num">01</span></td>
+                            <td>青海省自然科学奖</td>
+                            <td>2024</td>
+                            <td><span class="badge badge-orange">三等奖 (排名第5)</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="row-num">02</span></td>
+                            <td>青海省教学成果奖</td>
+                            <td>2025</td>
+                            <td><span class="badge badge-yellow">一等奖 (排名第8)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 个人荣誉 -->
+            <h2 class="section-title">个人荣誉</h2>
+            <div class="table-card">
+                <table class="award-table">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>荣誉名称</th>
+                            <th>荣获年份</th>
+                            <th>荣誉称号</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="row-num">01</span></td>
+                            <td>腾讯犀牛鸟开源人才培养计划</td>
+                            <td>2025</td>
+                            <td><span class="badge badge-yellow">优秀指导老师</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="row-num">02</span></td>
+                            <td>青海大学2021级本科生优秀毕业论文</td>
+                            <td>2025</td>
+                            <td><span class="badge badge-yellow">优秀指导老师</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="row-num">03</span></td>
+                            <td>2023年青海大学“超级计算机竞赛团队”受记功嘉奖表彰 (校级)</td>
+                            <td>2023</td>
+                            <td><span class="badge badge-yellow">集体嘉奖 (排名第2)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>OptiYouth HPC Lab</strong>
+                <span>© 2020-   Bian Haodong · Qinghai University，Current Time：<span id="current-time">正在加载...</span></span>
+            </div>
+            <a href="../../index.html">返回首页 ↑</a>
+        </div>
+    </footer>
+    <script data-optiyouth-time="true">
+        (function () {
+            function updateCurrentTime() {
+                var el = document.getElementById('current-time');
+                if (!el) return;
+                var now = new Date();
+                var text = now.toLocaleString('zh-CN', {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: false
+                });
+                el.textContent = text;
+            }
+            updateCurrentTime();
+            setInterval(updateCurrentTime, 1000);
+        })();
+    </script>
+</body>
+</html>

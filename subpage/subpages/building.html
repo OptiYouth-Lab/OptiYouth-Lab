@@ -7,6 +7,10 @@
 <link href="../styles.css" rel="stylesheet"/>
 <title>团队建设 / 招新 | OptiYouth HPC Lab Qinghai University</title>
 <style>
+    /* 仅覆盖这一页的 footer 样式 */
+    .footer {
+        margin-top: 80px !important;
+    }
         .container {
             max-width: 1280px;
             margin: 0 auto;
@@ -148,14 +152,6 @@
                 .nav-links a:hover {
                     color: #0055cc;
                 }
-        /* 页脚 */
-        .footer {
-            margin-top: 80px;
-            padding: 25px 0;
-            border-top: 1px solid #eee;
-            text-align: center;
-            color: #666;
-        }
     
 
 /* unified homepage navigation */
@@ -217,83 +213,100 @@
 </style>
 </head>
 <body>
-<!-- 全站统一导航栏 -->
-<nav class="nav">
-<a class="brand" href="../../index.html">
-    <span class="brand-mark">
-        <svg width="42" height="42" viewBox="0 0 100 100">
-            <!-- 纯圆角方形，无外层圆形 -->
-            <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
-            <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
-        </svg>
-    </span>
-<div>
-<div>OptiYouth HPC Lab</div>
-<div style="font-size:13px;opacity:0.8;">Qinghai University</div>
-</div>
-</a>
-<div class="nav-links">
-<a href="../../subpage/subpages/overview.html">团队起源</a>
-<a href="../../subpage/subpages/leader.html">负责人</a>
-<a href="../../subpage/subpages/member.html">团队成员</a>
-<a href="../../subpage/subpages/direction.html">研究方向</a>
-<a href="../../subpage/subpages/research.html">科研成果</a>
-<a href="../../subpage/subpages/competition.html">学科竞赛</a>
-<a href="../../subpage/subpages/collaboration.html">合作交流</a>
-<a href="../../subpage/subpages/building.html">团队建设</a>
-</div>
-</nav>
-<main class="container">
-<div class="page-header">
-<p class="page-sub-en">TEAM BUILDING</p>
-<h1 class="main-title">团队建设 / 招新要求</h1>
-</div>
-<!-- 左右双栏布局 -->
-<div class="two-column-wrap">
-<!-- 左侧：团队建设目标 -->
-<div class="col-left">
-<p class="small-title">GOALS</p>
-<h2>团队建设目标</h2>
-<div class="goal-item">
-<p><strong>学术：</strong>围绕高性能计算、绿色算力、系统优化和科学计算开展论文阅读、实验复现和学术写作训练。</p>
-</div>
-<div class="goal-item">
-<p><strong>竞赛：</strong>持续参与ASC、SolverChallenge、MCC、华为ICT等赛事，提升方案设计、性能调优和答辩表达能力。</p>
-</div>
-<div class="goal-item">
-<p><strong>专业技能：</strong>强化Linux集群环境管理、C/C++/Python高性能程序开发、MPI/OpenMP异构并行编程、性能瓶颈剖析与系统调优、科研工程文档撰写及大型超算项目协作能力。</p>
-</div>
-</div>
-<!-- 右侧：联系方式与招新要求 -->
-<div class="col-right">
-<p class="small-title">CONTACT</p>
-<h2>联系方式与招新要求</h2>
-<div class="contact-item">
-<strong>联系邮箱：</strong>optiyouth_hpc@163.com
+    <!-- 全站统一导航栏 -->
+    <nav class="nav">
+        <a class="brand" href="../../index.html">
+            <span class="brand-mark">
+                <svg width="42" height="42" viewBox="0 0 100 100">
+                    <!-- 纯圆角方形，无外层圆形 -->
+                    <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
+                    <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
+                </svg>
+            </span>
+            <div>
+                <div>OptiYouth HPC Lab</div>
+                <div style="font-size:13px;opacity:0.8;">Qinghai University</div>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="../../subpage/subpages/overview.html">团队起源</a>
+            <a href="../../subpage/subpages/leader.html">负责人</a>
+            <a href="../../subpage/subpages/member.html">团队成员</a>
+            <a href="../../subpage/subpages/direction.html">研究方向</a>
+            <a href="../../subpage/subpages/research.html">科研成果</a>
+            <a href="../../subpage/subpages/competition.html">学科竞赛</a>
+            <a href="../../subpage/subpages/awards.html">奖励荣誉</a>
+            <a href="../../subpage/subpages/collaboration.html">合作交流</a>
+            <a href="../../subpage/subpages/building.html">团队建设</a>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="page-header">
+            <p class="page-sub-en">TEAM BUILDING</p>
+            <h1 class="main-title">团队建设 / 招新要求</h1>
+        </div>
+        <!-- 左右双栏布局 -->
+        <div class="two-column-wrap">
+            <!-- 左侧：团队建设目标 -->
+            <div class="col-left">
+                <p class="small-title">GOALS</p>
+                <h2>团队建设目标</h2>
+                <div class="goal-item">
+                    <p><strong>学术：</strong>围绕高性能计算、绿色算力、系统优化和科学计算开展论文阅读、实验复现和学术写作训练。</p>
                 </div>
-<div class="contact-item">
-<strong>招新对象：</strong>对HPC、AI系统、科学计算、算法优化感兴趣的本科生（面向青海大学）与研究生（已录取准研究生）。
+                <div class="goal-item">
+                    <p><strong>竞赛：</strong>持续参与ASC、SolverChallenge、MCC、华为ICT等赛事，提升方案设计、性能调优和答辩表达能力。</p>
                 </div>
-<div class="contact-item">
-<strong>基本要求：</strong>态度严谨、耐心细致，积极配合指导教师的科研安排，具备长期深耕科研领域的意愿，愿意跟随导师开展系统性学习与科研实践。
+                <div class="goal-item">
+                    <p><strong>专业技能：</strong>强化Linux集群环境管理、C/C++/Python高性能程序开发、MPI/OpenMP异构并行编程、性能瓶颈剖析与系统调优、科研工程文档撰写及大型超算项目协作能力。</p>
                 </div>
-</div>
-</div>
-</main>
-<footer class="footer">
-<div>
-<strong>OptiYouth HPC Lab Qinghai University</strong>
-<p>© 2020-2026 边浩东 | 当前时间：<span id="time"></span></p>
-<<a href="../../index.html">返回首页 ↑</a>
-</div>
-</footer>
-<script>
-        function updateTime() {
-            let now = new Date();
-            document.getElementById("time").innerText = now.toLocaleString("zh-CN", { hour12: false });
-        }
-        updateTime();
-        setInterval(updateTime, 1000);
+            </div>
+            <!-- 右侧：联系方式与招新要求 -->
+            <div class="col-right">
+                <p class="small-title">CONTACT</p>
+                <h2>联系方式与招新要求</h2>
+                <div class="contact-item">
+                    <strong>联系邮箱：</strong>optiyouth_hpc@163.com
+                </div>
+                <div class="contact-item">
+                    <strong>招新对象：</strong>对HPC、AI系统、科学计算、算法优化感兴趣的本科生（面向青海大学）与研究生（已录取准研究生）。
+                </div>
+                <div class="contact-item">
+                    <strong>基本要求：</strong>态度严谨、耐心细致，积极配合指导教师的科研安排，具备长期深耕科研领域的意愿，愿意跟随导师开展系统性学习与科研实践。
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 替换为你页脚的全部内容 -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>OptiYouth HPC Lab</strong>
+                <span>© 2020-   Bian Haodong · Qinghai University，Current Time：<span id="current-time">正在加载...</span></span>
+            </div>
+            <a href="../../index.html">返回首页 ↑</a>
+        </div>
+    </footer>
+    <script data-optiyouth-time="true">
+        (function () {
+            function updateCurrentTime() {
+                var el = document.getElementById('current-time');
+                if (!el) return;
+                var now = new Date();
+                var text = now.toLocaleString('zh-CN', {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: false
+                });
+                el.textContent = text;
+            }
+            updateCurrentTime();
+            setInterval(updateCurrentTime, 1000);
+        })();
     </script>
 </body>
 </html>
