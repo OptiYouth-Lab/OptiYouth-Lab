@@ -657,3 +657,35 @@
     font-size:13px !important;
   }
 }
+/* ---- 语言切换按钮（左上角品牌旁） ---- */
+.lang-switch {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-left: 18px;
+    flex-shrink: 0;
+}
+.lang-switch button {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #c6e0ff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.25s;
+    font-family: inherit;
+    letter-spacing: 0.3px;
+}
+.lang-switch button:hover {
+    background: rgba(255,255,255,0.12);
+}
+.lang-switch button.active {
+    background: #ffffff;
+    color: #0a2545;
+    border-color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+

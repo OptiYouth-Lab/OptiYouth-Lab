@@ -217,74 +217,82 @@
 </style>
 </head>
 <body>
-<!-- 统一导航栏 -->
+<!-- 导航栏（已添加语言切换按钮） -->
 <nav class="nav">
-<a class="brand" href="../../index.html">
-    <span class="brand-mark">
-        <svg width="42" height="42" viewBox="0 0 100 100">
-            <!-- 纯圆角方形，无外层圆形 -->
-            <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
-            <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
-        </svg>
-    </span>
-<div>
-<div>OptiYouth HPC Lab</div>
-<div style="font-size:13px;opacity:0.8;">Qinghai University</div>
-</div>
-</a>
-<div class="nav-links">
-    <a href="../../subpage/subpages/overview.html">团队起源</a>
-    <a href="../../subpage/subpages/leader.html">负责人</a>
-    <a href="../../subpage/subpages/member.html">团队成员</a>
-    <a href="../../subpage/subpages/direction.html">研究方向</a>
-    <a href="../../subpage/subpages/research.html">科研成果</a>
-    <a href="../../subpage/subpages/competition.html">学科竞赛</a>
-    <a href="../../subpage/subpages/awards.html">奖励荣誉</a>
-    <a href="../../subpage/subpages/collaboration.html">合作交流</a>
-    <a href="../../subpage/subpages/building.html">团队建设</a>
-</div>
+    <div style="display:flex;align-items:center;">
+        <a class="brand" href="../../index.html" style="display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;">
+            <span class="brand-mark">
+                <svg width="42" height="42" viewBox="0 0 100 100">
+                    <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
+                    <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
+                </svg>
+            </span>
+            <div>
+                <div data-i18n="nav.brand">OptiYouth HPC Lab</div>
+                <div style="font-size:13px;opacity:0.8;" data-i18n="nav.brandSub">Qinghai University</div>
+            </div>
+        </a>
+        <div class="lang-switch">
+            <button class="lang-btn active" data-lang="zh">中文</button>
+            <button class="lang-btn" data-lang="en">English</button>
+        </div>
+    </div>
+    <div class="nav-links">
+        <a href="../../subpage/subpages/overview.html" data-i18n="nav.links.overview">团队起源</a>
+        <a href="../../subpage/subpages/leader.html" data-i18n="nav.links.leader">负责人</a>
+        <a href="../../subpage/subpages/member.html" data-i18n="nav.links.member">团队成员</a>
+        <a href="../../subpage/subpages/direction.html" data-i18n="nav.links.direction">研究方向</a>
+        <a href="../../subpage/subpages/research.html" data-i18n="nav.links.research">科研成果</a>
+        <a href="../../subpage/subpages/competition.html" data-i18n="nav.links.competition">学科竞赛</a>
+        <a href="../../subpage/subpages/awards.html" data-i18n="nav.links.awards">奖励荣誉</a>
+        <a href="../../subpage/subpages/academic.html" data-i18n="nav.links.academic">学术服务</a>
+        <a href="../../subpage/subpages/collaboration.html" data-i18n="nav.links.collaboration">合作交流</a>
+        <a href="../../subpage/subpages/building.html" data-i18n="nav.links.building">团队建设</a>
+    </div>
 </nav>
+
 <main>
 <div class="container">
 <!-- 页面总标题 -->
 <div class="page-top-title">
-<h1 class="main-title">科研项目与学术成果</h1>
-<p class="sub-desc">重点项目和代表性论文</p>
+<h1 class="main-title" data-i18n="research.title">科研项目与学术成果</h1>
+<p class="sub-desc" data-i18n="research.subDesc">重点项目和代表性论文</p>
 </div>
 <!-- 第一个独立卡片：科研项目 -->
 <div class="card-block">
-<span class="en-label">PROJECTS</span>
-<h2 class="block-title">科研项目</h2>
-<p class="block-desc">围绕并行智能计算、异构平台优化与学生科研训练，形成项目驱动的科研训练模式。</p>
+<span class="en-label" data-i18n="research.projectsLabel">PROJECTS</span>
+<h2 class="block-title" data-i18n="research.projectsTitle">科研项目</h2>
+<p class="block-desc" data-i18n="research.projectsDesc">围绕并行智能计算、异构平台优化与学生科研训练，形成项目驱动的科研训练模式。</p>
 <div class="pro-item">
 <div class="pro-left">
-<h4>国家重点研发计划（子课题）</h4>
-<p>面向高分辨区域模式的高可扩展并行及智能计算技术</p>
-<p>主持 | 45万元 | 2023.12 - 2026.12</p>
+<h4 data-i18n="research.proj1Name">国家重点研发计划（子课题）</h4>
+<p data-i18n="research.proj1Desc">面向高分辨区域模式的高可扩展并行及智能计算技术</p>
+<p data-i18n="research.proj1Meta">主持 | 45万元 | 2023.12 - 2026.12</p>
 </div>
-<span class="status-doing">在研</span>
-</div>
-<div class="pro-item">
-<div class="pro-left">
-<h4>青海省昆仑英才·高端创新创业人才项目</h4>
-<p>培养拔尖人才项目</p>
-<p>主持 | 20万元 | 2025.03 - 2028.03</p>
-</div>
-<span class="status-doing">在研</span>
+<span class="status-doing" data-i18n="research.proj1Status">在研</span>
 </div>
 <div class="pro-item">
 <div class="pro-left">
-<h4>中科曙光-光合基金横向项目</h4>
-<p>异构平台QUEST量子计算模拟器移植优化研究</p>
-<p>主持 | 8万元 | 2024.07 - 2025.12</p>
+<h4 data-i18n="research.proj2Name">青海省昆仑英才·高端创新创业人才项目</h4>
+<p data-i18n="research.proj2Desc">培养拔尖人才项目</p>
+<p data-i18n="research.proj2Meta">主持 | 20万元 | 2025.03 - 2028.03</p>
 </div>
-<span class="status-finish">结题</span>
+<span class="status-doing" data-i18n="research.proj2Status">在研</span>
+</div>
+<div class="pro-item">
+<div class="pro-left">
+<h4 data-i18n="research.proj3Name">中科曙光-光合基金横向项目</h4>
+<p data-i18n="research.proj3Desc">异构平台QUEST量子计算模拟器移植优化研究</p>
+<p data-i18n="research.proj3Meta">主持 | 8万元 | 2024.07 - 2025.12</p>
+</div>
+<span class="status-finish" data-i18n="research.proj3Status">结题</span>
 </div>
 </div>
 <!-- 第二个独立卡片：学术论文 -->
 <div class="card-block">
-<span class="en-label">PUBLICATIONS</span>
-<h2 class="block-title">学术论文</h2>
+<span class="en-label" data-i18n="research.papersLabel">PUBLICATIONS</span>
+<h2 class="block-title" data-i18n="research.papersTitle">学术论文</h2>
+<!-- 论文标题、作者、会议/期刊保持原样（学术名称不翻译） -->
 <div class="paper-item">
 <h3 class="paper-name">PANA: A Fine-Grained Runtime-Adaptive Load Balancing for Parallel SpMV on Multicore CPUs</h3>
 <p class="paper-author">Haodong Bian, Youhui Zhang, Xiang Fei, Jianqiang Huang, Xiaoying Wang.</p>
@@ -295,7 +303,7 @@
 </div>
 <div class="paper-item">
 <h3 class="paper-name">GWBP: Accelerating Weighted Back-Projection for Image Reconstruction via Efficient GPU Parallel Optimization</h3>
-<p class="paper-author">Hongbo Miao, Haodong Bian*.</p>
+<p class="paper-author">Hongbo Miao, Haodong Bian.</p>
 <div class="tag-row">
 <span class="ccf-b">CCF-B</span>
 <span class="conf-text">Euro-Par 2026</span>
@@ -316,64 +324,59 @@
         <span class="ccf-c">CCF-C</span>
         <span class="conf-text">ICIC 2025</span>
     </div>
-    <!-- ==================== 2021年论文 ==================== -->
-    <!-- CCF-B, SCI 4区 -->
-    <div class="paper-item">
-        <h3 class="paper-name">PAS: A new powerful and simple quantum computing simulator</h3>
-        <p class="paper-author">Haodong Bian, Jianqiang Huang, Jiahao Tang, Runting Dong, Li Wu, Xiaoying Wang.</p>
-        <div class="tag-row">
-            <span class="ccf-b">CCF-B</span>
-            <span class="conf-text">SCI 4区</span>
-            <span class="conf-text">SPE 2021</span>
-        </div>
+</div>
+<div class="paper-item">
+    <h3 class="paper-name">PAS: A new powerful and simple quantum computing simulator</h3>
+    <p class="paper-author">Haodong Bian, Jianqiang Huang, Jiahao Tang, Runting Dong, Li Wu, Xiaoying Wang.</p>
+    <div class="tag-row">
+        <span class="ccf-b">CCF-B</span>
+        <span class="conf-text">SCI 4区</span>
+        <span class="conf-text">SPE 2021</span>
     </div>
-
-    <!-- CCF-C, SCI 2区, 中科院TOP -->
-    <div class="paper-item">
-        <h3 class="paper-name">ALBUS: A method for efficiently processing SpMV using SIMD and Load balancing</h3>
-        <p class="paper-author">Haodong Bian, Jianqiang Huang, Linbing Liu, Dongqiang Huang, Xiaoying Wang.</p>
-        <div class="tag-row">
-            <span class="ccf-c">CCF-C</span>
-            <span class="conf-text">SCI 2区</span>
-            <span class="conf-text">中科院TOP</span>
-            <span class="conf-text">FGCS 2021</span>
-        </div>
+</div>
+<div class="paper-item">
+    <h3 class="paper-name">ALBUS: A method for efficiently processing SpMV using SIMD and Load balancing</h3>
+    <p class="paper-author">Haodong Bian, Jianqiang Huang, Linbing Liu, Dongqiang Huang, Xiaoying Wang.</p>
+    <div class="tag-row">
+        <span class="ccf-c">CCF-C</span>
+        <span class="conf-text">SCI 2区</span>
+        <span class="conf-text">中科院TOP</span>
+        <span class="conf-text">FGCS 2021</span>
     </div>
-
-    <!-- ==================== 2020年论文 ==================== -->
-    <!-- CCF-C -->
-    <div class="paper-item">
-        <h3 class="paper-name">CSR2: A New Format for SIMD-accelerated SpMV</h3>
-        <p class="paper-author">Haodong Bian, Jianqiang Huang, Runting Dong, Linbing Liu, Xiaoying Wang.</p>
-        <div class="tag-row">
-            <span class="ccf-c">CCF-C</span>
-            <span class="conf-text">CCGRID 2020</span>
-        </div>
+</div>
+<div class="paper-item">
+    <h3 class="paper-name">CSR2: A New Format for SIMD-accelerated SpMV</h3>
+    <p class="paper-author">Haodong Bian, Jianqiang Huang, Runting Dong, Linbing Liu, Xiaoying Wang.</p>
+    <div class="tag-row">
+        <span class="ccf-c">CCF-C</span>
+        <span class="conf-text">CCGRID 2020</span>
     </div>
-
-    <!-- CCF-C -->
-    <div class="paper-item">
-        <h3 class="paper-name">HpQC: A New Efficient Quantum Computing Simulator</h3>
-        <p class="paper-author">Haodong Bian, Jianqiang Huang, Runting Dong, Yuluo Guo, Xiaoying Wang.</p>
-        <div class="tag-row">
-            <span class="ccf-c">CCF-C</span>
-            <span class="conf-text">ICA3PP 2020</span>
-        </div>
+</div>
+<div class="paper-item">
+    <h3 class="paper-name">HpQC: A New Efficient Quantum Computing Simulator</h3>
+    <p class="paper-author">Haodong Bian, Jianqiang Huang, Runting Dong, Yuluo Guo, Xiaoying Wang.</p>
+    <div class="tag-row">
+        <span class="ccf-c">CCF-C</span>
+        <span class="conf-text">ICA3PP 2020</span>
     </div>
 </div>
 </div>
 </div>
 </main>
-<!-- 统一页脚+时间脚本 -->
+<!-- 页脚 -->
 <footer class="footer">
 <div class="container footer-inner">
 <div>
-<strong>OptiYouth HPC Lab Qinghai University</strong>
-<span> © 2020-2026 边浩东 | 当前时间：<span id="time"></span></span>
+<strong data-i18n="footer.brand">OptiYouth HPC Lab Qinghai University</strong>
+<span data-i18n="footer.copyright">© 2020-2026 边浩东 | 当前时间：</span>
+<span id="time"></span>
 </div>
-<a href="../../index.html">返回首页 ↑</a>
+<a href="../../index.html" data-i18n="footer.backHome">返回首页 ↑</a>
 </div>
 </footer>
+
+<script src="../i18n.js"></script>
+
 <script>
         function updateTime() {
             let now = new Date();
@@ -381,6 +384,6 @@
         }
         updateTime();
         setInterval(updateTime, 1000);
-    </script>
+</script>
 </body>
 </html>

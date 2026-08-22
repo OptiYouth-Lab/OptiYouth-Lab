@@ -222,102 +222,107 @@
     }
 </style>
 </head>
-<link href="../../styles.css?v=2.0" rel="stylesheet" />
 <body>
+    <!-- 导航栏（已添加语言切换按钮） -->
     <nav class="nav">
-        <a class="brand" href="../../index.html">
-            <span class="brand-mark">
-                <svg width="42" height="42" viewBox="0 0 100 100">
-                    <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
-                    <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
-                </svg>
-            </span>
-            <div>
-                <div>OptiYouth HPC Lab</div>
-                <div style="font-size:13px;opacity:0.8;">Qinghai University</div>
+        <div style="display:flex;align-items:center;">
+            <a class="brand" href="../../index.html" style="display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;">
+                <span class="brand-mark">
+                    <svg width="42" height="42" viewBox="0 0 100 100">
+                        <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
+                        <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
+                    </svg>
+                </span>
+                <div>
+                    <div data-i18n="nav.brand">OptiYouth HPC Lab</div>
+                    <div style="font-size:13px;opacity:0.8;" data-i18n="nav.brandSub">Qinghai University</div>
+                </div>
+            </a>
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="zh">中文</button>
+                <button class="lang-btn" data-lang="en">English</button>
             </div>
-        </a>
+        </div>
         <div class="nav-links">
-            <a href="../../subpage/subpages/overview.html">团队起源</a>
-            <a href="../../subpage/subpages/leader.html">负责人</a>
-            <a href="../../subpage/subpages/member.html">团队成员</a>
-            <a href="../../subpage/subpages/direction.html">研究方向</a>
-            <a href="../../subpage/subpages/research.html">科研成果</a>
-            <a href="../../subpage/subpages/competition.html">学科竞赛</a>
-            <a href="../../subpage/subpages/awards.html">奖励荣誉</a>
-            <a href="../../subpage/subpages/collaboration.html">合作交流</a>
-            <a href="../../subpage/subpages/building.html">团队建设</a>
-            <!-- 新增的导航项 -->
-
+            <a href="../../subpage/subpages/overview.html" data-i18n="nav.links.overview">团队起源</a>
+            <a href="../../subpage/subpages/leader.html" data-i18n="nav.links.leader">负责人</a>
+            <a href="../../subpage/subpages/member.html" data-i18n="nav.links.member">团队成员</a>
+            <a href="../../subpage/subpages/direction.html" data-i18n="nav.links.direction">研究方向</a>
+            <a href="../../subpage/subpages/research.html" data-i18n="nav.links.research">科研成果</a>
+            <a href="../../subpage/subpages/competition.html" data-i18n="nav.links.competition">学科竞赛</a>
+            <a href="../../subpage/subpages/awards.html" data-i18n="nav.links.awards">奖励荣誉</a>
+            <a href="../../subpage/subpages/academic.html" data-i18n="nav.links.academic">学术服务</a>
+            <a href="../../subpage/subpages/collaboration.html" data-i18n="nav.links.collaboration">合作交流</a>
+            <a href="../../subpage/subpages/building.html" data-i18n="nav.links.building">团队建设</a>
         </div>
     </nav>
 
     <main>
         <div class="container">
             <div class="page-header">
-                <p class="page-sub-en">AWARDS & HONORS</p>
-                <h1 class="main-title">奖励荣誉</h1>
+                <p class="page-sub-en" data-i18n="awards.subTitle">AWARDS & HONORS</p>
+                <h1 class="main-title" data-i18n="awards.title">奖励荣誉</h1>
             </div>
 
             <!-- 科教奖励 -->
-            <h2 class="section-title">科教奖励</h2>
+            <h2 class="section-title" data-i18n="awards.eduTitle">科教奖励</h2>
             <div class="table-card">
                 <table class="award-table">
                     <thead>
                         <tr>
-                            <th>序号</th>
-                            <th>奖励/荣誉名称</th>
-                            <th>获奖年份</th>
-                            <th>等级/称号</th>
+                            <th data-i18n="awards.thSerial">序号</th>
+                            <th data-i18n="awards.thName">奖励/荣誉名称</th>
+                            <th data-i18n="awards.thYear">获奖年份</th>
+                            <th data-i18n="awards.thLevel">等级/称号</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><span class="row-num">01</span></td>
-                            <td>青海省自然科学奖</td>
+                            <td data-i18n="awards.eduItem1">青海省自然科学奖</td>
                             <td>2024</td>
-                            <td><span class="badge badge-orange">三等奖 (排名第5)</span></td>
+                            <td><span class="badge badge-orange" data-i18n="awards.eduItem1Level">三等奖 (排名第5)</span></td>
                         </tr>
                         <tr>
                             <td><span class="row-num">02</span></td>
-                            <td>青海省教学成果奖</td>
+                            <td data-i18n="awards.eduItem2">青海省教学成果奖</td>
                             <td>2025</td>
-                            <td><span class="badge badge-yellow">一等奖 (排名第8)</span></td>
+                            <td><span class="badge badge-yellow" data-i18n="awards.eduItem2Level">一等奖 (排名第8)</span></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
             <!-- 个人荣誉 -->
-            <h2 class="section-title">个人荣誉</h2>
+            <h2 class="section-title" data-i18n="awards.personTitle">个人荣誉</h2>
             <div class="table-card">
                 <table class="award-table">
                     <thead>
                         <tr>
-                            <th>序号</th>
-                            <th>荣誉名称</th>
-                            <th>荣获年份</th>
-                            <th>荣誉称号</th>
+                            <th data-i18n="awards.thSerial">序号</th>
+                            <th data-i18n="awards.thPersonName">荣誉名称</th>
+                            <th data-i18n="awards.thPersonYear">荣获年份</th>
+                            <th data-i18n="awards.thPersonLevel">荣誉称号</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><span class="row-num">01</span></td>
-                            <td>腾讯犀牛鸟开源人才培养计划</td>
+                            <td data-i18n="awards.personItem1">腾讯犀牛鸟开源人才培养计划</td>
                             <td>2025</td>
-                            <td><span class="badge badge-yellow">优秀指导老师</span></td>
+                            <td><span class="badge badge-yellow" data-i18n="awards.personItem1Level">优秀指导老师</span></td>
                         </tr>
                         <tr>
                             <td><span class="row-num">02</span></td>
-                            <td>青海大学2021级本科生优秀毕业论文</td>
+                            <td data-i18n="awards.personItem2">青海大学2021级本科生优秀毕业论文</td>
                             <td>2025</td>
-                            <td><span class="badge badge-yellow">优秀指导老师</span></td>
+                            <td><span class="badge badge-yellow" data-i18n="awards.personItem2Level">优秀指导老师</span></td>
                         </tr>
                         <tr>
                             <td><span class="row-num">03</span></td>
-                            <td>2023年青海大学“超级计算机竞赛团队”受记功嘉奖表彰 (校级)</td>
+                            <td data-i18n="awards.personItem3">2023年青海大学"超级计算机竞赛团队"受记功嘉奖表彰 (校级)</td>
                             <td>2023</td>
-                            <td><span class="badge badge-yellow">集体嘉奖 (排名第2)</span></td>
+                            <td><span class="badge badge-yellow" data-i18n="awards.personItem3Level">集体嘉奖 (排名第2)</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -328,12 +333,16 @@
     <footer class="footer">
         <div class="container footer-inner">
             <div>
-                <strong>OptiYouth HPC Lab</strong>
-                <span>© 2020-   Bian Haodong · Qinghai University，Current Time：<span id="current-time">正在加载...</span></span>
+                <strong data-i18n="footer.brand">OptiYouth HPC Lab</strong>
+                <span data-i18n="footer.copyright">© 2020-   Bian Haodong · Qinghai University，当前时间：</span>
+                <span id="current-time">正在加载...</span>
             </div>
-            <a href="../../index.html">返回首页 ↑</a>
+            <a href="../../index.html" data-i18n="footer.backHome">返回首页 ↑</a>
         </div>
     </footer>
+
+    <script src="../i18n.js"></script>
+
     <script data-optiyouth-time="true">
         (function () {
             function updateCurrentTime() {

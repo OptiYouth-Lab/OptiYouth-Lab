@@ -50,7 +50,7 @@
         }
 
 
-        /* unified homepage navigation 完全原样保留，不修改 */
+        /* unified homepage navigation */
         .nav {
             width: 100% !important;
             display: flex !important;
@@ -123,39 +123,46 @@
     </style>
 </head>
 <body>
-    <!-- 顶部导航 HTML 完全原样保留，链接路径不改 -->
+    <!-- 导航栏（已添加语言切换按钮） -->
     <nav class="nav">
-        <a class="brand" href="../../index.html">
-            <span class="brand-mark">
-                <svg width="42" height="42" viewBox="0 0 100 100">
-                    <!-- 纯圆角方形，无外层圆形 -->
-                    <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
-                    <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
-                </svg>
-            </span>
-            <div>
-                <div>OptiYouth HPC Lab</div>
-                <div style="font-size:13px;opacity:0.8;">Qinghai University</div>
+        <div style="display:flex;align-items:center;">
+            <a class="brand" href="../../index.html" style="display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;">
+                <span class="brand-mark">
+                    <svg width="42" height="42" viewBox="0 0 100 100">
+                        <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
+                        <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
+                    </svg>
+                </span>
+                <div>
+                    <div data-i18n="nav.brand">OptiYouth HPC Lab</div>
+                    <div style="font-size:13px;opacity:0.8;" data-i18n="nav.brandSub">Qinghai University</div>
+                </div>
+            </a>
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="zh">中文</button>
+                <button class="lang-btn" data-lang="en">English</button>
             </div>
-        </a>
+        </div>
         <div class="nav-links">
-            <a href="../../subpage/subpages/overview.html">团队起源</a>
-            <a href="../../subpage/subpages/leader.html">负责人</a>
-            <a href="../../subpage/subpages/member.html">团队成员</a>
-            <a href="../../subpage/subpages/direction.html">研究方向</a>
-            <a href="../../subpage/subpages/research.html">科研成果</a>
-            <a href="../../subpage/subpages/competition.html">学科竞赛</a>
-            <a href="../../subpage/subpages/awards.html">奖励荣誉</a>
-            <a href="../../subpage/subpages/collaboration.html">合作交流</a>
-            <a href="../../subpage/subpages/building.html">团队建设</a>
+            <a href="../../subpage/subpages/overview.html" data-i18n="nav.links.overview">团队起源</a>
+            <a href="../../subpage/subpages/leader.html" data-i18n="nav.links.leader">负责人</a>
+            <a href="../../subpage/subpages/member.html" data-i18n="nav.links.member">团队成员</a>
+            <a href="../../subpage/subpages/direction.html" data-i18n="nav.links.direction">研究方向</a>
+            <a href="../../subpage/subpages/research.html" data-i18n="nav.links.research">科研成果</a>
+            <a href="../../subpage/subpages/competition.html" data-i18n="nav.links.competition">学科竞赛</a>
+            <a href="../../subpage/subpages/awards.html" data-i18n="nav.links.awards">奖励荣誉</a>
+            <a href="../../subpage/subpages/academic.html" data-i18n="nav.links.academic">学术服务</a>
+            <a href="../../subpage/subpages/collaboration.html" data-i18n="nav.links.collaboration">合作交流</a>
+            <a href="../../subpage/subpages/building.html" data-i18n="nav.links.building">团队建设</a>
         </div>
     </nav>
+
     <main>
         <section class="section">
             <div class="container">
                 <div class="section-head center">
-                    <h2>学科竞赛</h2>
-                    <p>实验室历年参赛获奖证书与赛事记录</p>
+                    <h2 data-i18n="competition.title">学科竞赛</h2>
+                    <p data-i18n="competition.subDesc">实验室历年参赛获奖证书与赛事记录</p>
                 </div>
 
                 <!-- 2026 年份分组 -->
@@ -166,10 +173,10 @@
                             <img alt="华为ICT指导教师证书" src="../assets/images/huawei2026.jpg" />
                             <div class="member-body">
                                 <p class="year-text">Huawei ICT 2026</p>
-                                <p class="match-name">华为ICT大赛中国总决赛</p>
+                                <p class="match-name" data-i18n="competition.match.huawei2026">华为ICT大赛中国总决赛</p>
                                 <p class="rank-text">全国二等奖</p>
-                                <p class="people-text">参赛队伍：优化少年 | 指导老师：边浩东</p>
-                                <p class="people-text">参赛队员：薛凤,缪弘博,李一帆,刘鸿毅,王佳</p>
+                                <p class="people-text"><span data-i18n="competition.teamLabel">参赛队伍</span>：<span data-i18n="competition.teamName">优化少年</span> | <span data-i18n="competition.advisorLabel">指导老师</span>：<span data-i18n="member.names.bian">边浩东</span></p>
+                                <p class="people-text"><span data-i18n="competition.membersLabel">参赛队员</span>：<span data-i18n="member.names.xue">薛凤</span>,<span data-i18n="member.names.miao">缪弘博</span>,<span data-i18n="competition.names.liyifan">李一帆</span>,<span data-i18n="competition.names.liuhongyi">刘鸿毅</span>,<span data-i18n="member.names.wang">王佳</span></p>
                             </div>
                         </article>
 
@@ -177,10 +184,10 @@
                             <img alt="CCF 2026" src="../assets/images/CCF2026.jpg" />
                             <div class="member-body">
                                 <p class="year-text">CCF 2026</p>
-                                <p class="match-name">第三届CCF算力网系统与应用大赛</p>
+                                <p class="match-name" data-i18n="competition.match.ccf2026">第三届CCF算力网系统与应用大赛</p>
                                 <p class="rank-text">全国二等奖</p>
-                                <p class="people-text">参赛队伍：优化少年 | 指导老师：边浩东</p>
-                                <p class="people-text">参赛队员：陈佳乐,彭静娇,王兴伟</p>
+                                <p class="people-text"><span data-i18n="competition.teamLabel">参赛队伍</span>：<span data-i18n="competition.teamName">优化少年</span> | <span data-i18n="competition.advisorLabel">指导老师</span>：<span data-i18n="member.names.bian">边浩东</span></p>
+                                <p class="people-text"><span data-i18n="competition.membersLabel">参赛队员</span>：<span data-i18n="member.names.chen">陈佳乐</span>,<span data-i18n="member.names.peng">彭静娇</span>,<span data-i18n="member.names.wangxing">王兴伟</span></p>
                             </div>
                         </article>
                     </div>
@@ -195,10 +202,10 @@
                             <img alt="Solver2025" src="../assets/images/solver2025.jpg" />
                             <div class="member-body">
                                 <p class="year-text">SolverChallenge 2025</p>
-                                <p class="match-name">第四届 SolverChallenge<br />全国稀疏线性解法器性能优化与算法竞赛</p>
+                                <p class="match-name" data-i18n="competition.match.solver2025">第四届 SolverChallenge<br />全国稀疏线性解法器性能优化与算法竞赛</p>
                                 <p class="rank-text">全国二等奖</p>
-                                <p class="people-text">参赛队伍：优化少年 | 指导老师：边浩东</p>
-                                <p class="people-text">参赛队员：缪弘博</p>
+                                <p class="people-text"><span data-i18n="competition.teamLabel">参赛队伍</span>：<span data-i18n="competition.teamName">优化少年</span> | <span data-i18n="competition.advisorLabel">指导老师</span>：<span data-i18n="member.names.bian">边浩东</span></p>
+                                <p class="people-text"><span data-i18n="competition.membersLabel">参赛队员</span>：<span data-i18n="member.names.miao">缪弘博</span></p>
                             </div>
                         </article>
                      
@@ -206,10 +213,10 @@
                             <img alt="ASC2025" src="../assets/images/asc2025.jpg" />
                             <div class="member-body">
                                 <p class="year-text">ASC 2025</p>
-                                <p class="match-name">世界大学生超级计算机竞赛</p>
+                                <p class="match-name" data-i18n="competition.match.asc2025">世界大学生超级计算机竞赛</p>
                                 <p class="rank-text">全国二等奖</p>
-                                <p class="people-text">参赛队伍：优化少年 | 指导老师：边浩东</p>
-                                <p class="people-text">参赛队员：Kaide Zheng,Yi Dai,Xinyu Liao,Hongbo Miao,Xiaolin An</p>
+                                <p class="people-text"><span data-i18n="competition.teamLabel">参赛队伍</span>：<span data-i18n="competition.teamName">优化少年</span> | <span data-i18n="competition.advisorLabel">指导老师</span>：<span data-i18n="member.names.bian">边浩东</span></p>
+                                <p class="people-text"><span data-i18n="competition.membersLabel">参赛队员</span>：Kaide Zheng,Yi Dai,Xinyu Liao,<span data-i18n="member.names.miao">缪弘博</span>,Xiaolin An</p>
                             </div>
                         </article>
 
@@ -217,10 +224,9 @@
                             <img alt="OpenAtom2025" src="../assets/images/openatom2025.jpg" />
                             <div class="member-body">
                                 <p class="year-text">OpenAtom 2025</p>
-                                <p class="match-name">第二届开放原子大赛<br />(Tecorigin算子开发任务挑战赛)</p>
+                                <p class="match-name" data-i18n="competition.match.openatom2025">第二届开放原子大赛<br />(Tecorigin算子开发任务挑战赛)</p>
                                 <p class="rank-text">全国三等奖</p>
-                                <p class="people-text">参赛队伍：优化少年 | 指导老师：边浩东</p>
-
+                                <p class="people-text"><span data-i18n="competition.teamLabel">参赛队伍</span>：<span data-i18n="competition.teamName">优化少年</span> | <span data-i18n="competition.advisorLabel">指导老师</span>：<span data-i18n="member.names.bian">边浩东</span></p>
                             </div>
                         </article>
 
@@ -228,10 +234,10 @@
                             <img alt="先导杯2021" src="../assets/images/xiandao2025.jpg" />
                             <div class="member-body">
                                 <p class="year-text">先导杯 2025</p>
-                                <p class="match-name">全国大学生计算机系统能力大赛<br />——智能计算创新设计赛（先导杯）</p>
+                                <p class="match-name" data-i18n="competition.match.xiandao2025">全国大学生计算机系统能力大赛<br />——智能计算创新设计赛（先导杯）</p>
                                 <p class="rank-text">优秀指导教师</p>
-                                <p class="people-text">参赛队伍：优化少年 | 指导老师：边浩东</p>
-                                <p class="people-text">参赛队员：缪弘博</p>
+                                <p class="people-text"><span data-i18n="competition.teamLabel">参赛队伍</span>：<span data-i18n="competition.teamName">优化少年</span> | <span data-i18n="competition.advisorLabel">指导老师</span>：<span data-i18n="member.names.bian">边浩东</span></p>
+                                <p class="people-text"><span data-i18n="competition.membersLabel">参赛队员</span>：<span data-i18n="member.names.miao">缪弘博</span></p>
                             </div>
                         </article>
                     </div>
@@ -246,10 +252,10 @@
                             <img alt="ASC2024" src="../assets/images/asc2024.jpg" />
                             <div class="member-body">
                                 <p class="year-text">ASC 2024</p>
-                                <p class="match-name">世界大学生超级计算机竞赛</p>
+                                <p class="match-name" data-i18n="competition.match.asc2024">世界大学生超级计算机竞赛</p>
                                 <p class="rank-text">全国一等奖</p>
-                                <p class="people-text">参赛队伍：优化少年 | 指导老师：边浩东</p>
-                                <p class="people-text">参赛队员：Zhaoyang Luo,funing Fu,Langkun Jiang,Xingchi Wang,Yixue Yang</p>
+                                <p class="people-text"><span data-i18n="competition.teamLabel">参赛队伍</span>：<span data-i18n="competition.teamName">优化少年</span> | <span data-i18n="competition.advisorLabel">指导老师</span>：<span data-i18n="member.names.bian">边浩东</span></p>
+                                <p class="people-text"><span data-i18n="competition.membersLabel">参赛队员</span>：Zhaoyang Luo,funing Fu,Langkun Jiang,Xingchi Wang,<span data-i18n="competition.names.yangyixue">杨怡雪</span></p>
                             </div>
                         </article>
                       
@@ -257,9 +263,9 @@
                             <img alt="MCC2024" src="../assets/images/mcc2024.jpg" />
                             <div class="member-body">
                                 <p class="year-text">MCC 2024</p>
-                                <p class="match-name">海洋计算挑战赛全国总决赛</p>
+                                <p class="match-name" data-i18n="competition.match.mcc2024">海洋计算挑战赛全国总决赛</p>
                                 <p class="rank-text">全国二等奖（星浪奖）</p>
-                                <p class="people-text">参赛队伍：优化少年 | 指导老师：边浩东</p>
+                                <p class="people-text"><span data-i18n="competition.teamLabel">参赛队伍</span>：<span data-i18n="competition.teamName">优化少年</span> | <span data-i18n="competition.advisorLabel">指导老师</span>：<span data-i18n="member.names.bian">边浩东</span></p>
                             </div>
                         </article>
                       
@@ -267,10 +273,10 @@
                             <img alt="Solver2024" src="../assets/images/solver2024.jpg" />
                             <div class="member-body">
                                 <p class="year-text">SolverChallenge 2024</p>
-                                <p class="match-name">第三届 SolverChallenge<br />全国稀疏线性解法器性能优化与算法竞赛</p>
+                                <p class="match-name" data-i18n="competition.match.solver2024">第三届 SolverChallenge<br />全国稀疏线性解法器性能优化与算法竞赛</p>
                                 <p class="rank-text">全国三等奖</p>
-                                <p class="people-text">参赛队伍：优化少年 | 指导老师：边浩东</p>
-                                <p class="people-text">参赛队员：杨怡雪</p>
+                                <p class="people-text"><span data-i18n="competition.teamLabel">参赛队伍</span>：<span data-i18n="competition.teamName">优化少年</span> | <span data-i18n="competition.advisorLabel">指导老师</span>：<span data-i18n="member.names.bian">边浩东</span></p>
+                                <p class="people-text"><span data-i18n="competition.membersLabel">参赛队员</span>：<span data-i18n="competition.names.yangyixue">杨怡雪</span></p>
                             </div>
                         </article>
                        
@@ -278,9 +284,9 @@
                             <img alt="天梯赛 2024" src="../assets/images/tianti2024.jpg" />
                             <div class="member-body">
                                 <p class="year-text">天梯赛 2024</p>
-                                <p class="match-name">团体程序设计天梯赛全国总决赛</p>
+                                <p class="match-name" data-i18n="competition.match.tianti2024">团体程序设计天梯赛全国总决赛</p>
                                 <p class="rank-text">团队二等奖</p>
-                                <p class="people-text">参赛队伍：优化少年 | 指导老师：边浩东</p>
+                                <p class="people-text"><span data-i18n="competition.teamLabel">参赛队伍</span>：<span data-i18n="competition.teamName">优化少年</span> | <span data-i18n="competition.advisorLabel">指导老师</span>：<span data-i18n="member.names.bian">边浩东</span></p>
                             </div>
                         </article>
                     </div>
@@ -295,10 +301,10 @@
                             <img alt="ICPC2023" src="../assets/images/icpc2023.jpg" />
                             <div class="member-body">
                                 <p class="year-text">ICPC 2023</p>
-                                <p class="match-name">The 2023 ICPC <br />China Silk Road National Invitational Programming Contest</p>
+                                <p class="match-name" data-i18n="competition.match.icpc2023">The 2023 ICPC <br />China Silk Road National Invitational Programming Contest</p>
                                 <p class="rank-text">全国金奖</p>
-                                <p class="people-text">参赛队伍：优化少年 | 指导老师：边浩东</p>
-                                <p class="people-text">参赛队员：Langkun Jiang,Xinyang Wang,Yixue Yang</p>
+                                <p class="people-text"><span data-i18n="competition.teamLabel">参赛队伍</span>：<span data-i18n="competition.teamName">优化少年</span> | <span data-i18n="competition.advisorLabel">指导老师</span>：<span data-i18n="member.names.bian">边浩东</span></p>
+                                <p class="people-text"><span data-i18n="competition.membersLabel">参赛队员</span>：Langkun Jiang,Xinyang Wang,<span data-i18n="competition.names.yangyixue">杨怡雪</span></p>
                             </div>
                         </article>
                     </div>
@@ -312,9 +318,9 @@
                             <img alt="PAC2022" src="../assets/images/pac2022.jpg" />
                             <div class="member-body">
                                 <p class="year-text">PAC 2022</p>
-                                <p class="match-name">“英特尔”杯全国并行应用挑战赛</p>
+                                <p class="match-name" data-i18n="competition.match.pac2022">“英特尔”杯全国并行应用挑战赛</p>
                                 <p class="rank-text">全国二等奖</p>
-                                <p class="people-text">参赛队伍：优化少年 | 参赛成员：边浩东</p>
+                                <p class="people-text"><span data-i18n="competition.teamLabel">参赛队伍</span>：<span data-i18n="competition.teamName">优化少年</span> | <span data-i18n="competition.membersLabel">参赛成员</span>：<span data-i18n="member.names.bian">边浩东</span></p>
                             </div>
                         </article>
                     </div>
@@ -328,9 +334,9 @@
                             <img alt="先导杯2021" src="../assets/images/pioneer2021.jpg" />
                             <div class="member-body">
                                 <p class="year-text">先导杯 2021</p>
-                                <p class="match-name">第二届“先导杯”计算应用大奖赛</p>
+                                <p class="match-name" data-i18n="competition.match.pioneer2021">第二届“先导杯”计算应用大奖赛</p>
                                 <p class="rank-text">入围奖</p>
-                                <p class="people-text">参赛队伍：优化少年 </p>
+                                <p class="people-text"><span data-i18n="competition.teamLabel">参赛队伍</span>：<span data-i18n="competition.teamName">优化少年</span></p>
                             </div>
                         </article>
                     </div>
@@ -338,16 +344,21 @@
             </div>
         </section>
     </main>
-    <!-- 底部页脚 HTML、链接路径完全原样保留不改动 -->
+
+    <!-- 页脚 -->
     <footer class="footer">
         <div class="container footer-inner">
             <div>
-                <strong>OptiYouth HPC Lab</strong>
-                <span>© 2020-   Bian Haodong · Qinghai University，Current Time：<span id="current-time">正在加载...</span></span>
+                <strong data-i18n="footer.brand">OptiYouth HPC Lab</strong>
+                <span data-i18n="footer.copyright">© 2020-   Bian Haodong · Qinghai University，当前时间：</span>
+                <span id="current-time">正在加载...</span>
             </div>
-            <a href="../../index.html">返回首页 ↑</a>
+            <a href="../../index.html" data-i18n="footer.backHome">返回首页 ↑</a>
         </div>
     </footer>
+
+    <script src="../i18n.js"></script>
+
     <script data-optiyouth-time="true">
         (function () {
             function updateCurrentTime() {

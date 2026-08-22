@@ -64,175 +64,202 @@
   .nav{padding:18px 24px !important;}
   .nav .nav-links{display:none !important;}
 }
-</style></head>
+</style>
+</head>
 <body>
-<!-- 全站统一导航栏 -->
+<!-- 导航栏 -->
 <nav class="nav">
-<a class="brand" href="../../index.html">
-    <span class="brand-mark">
-        <svg width="42" height="42" viewBox="0 0 100 100">
-            <!-- 纯圆角方形，无外层圆形 -->
-            <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
-            <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
-        </svg>
-    </span>
-<div>
-<div>OptiYouth HPC Lab</div>
-<div style="font-size:13px;opacity:0.8;">Qinghai University</div>
-</div>
-</a>
-<div class="nav-links">
-    <a href="../../subpage/subpages/overview.html">团队起源</a>
-    <a href="../../subpage/subpages/leader.html">负责人</a>
-    <a href="../../subpage/subpages/member.html">团队成员</a>
-    <a href="../../subpage/subpages/direction.html">研究方向</a>
-    <a href="../../subpage/subpages/research.html">科研成果</a>
-    <a href="../../subpage/subpages/competition.html">学科竞赛</a>
-    <a href="../../subpage/subpages/awards.html">奖励荣誉</a>
-    <a href="../../subpage/subpages/collaboration.html">合作交流</a>
-    <a href="../../subpage/subpages/building.html">团队建设</a>
-</div>
+    <div style="display:flex;align-items:center;">
+        <a class="brand" href="../../index.html" style="display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;">
+            <span class="brand-mark">
+                <svg width="42" height="42" viewBox="0 0 100 100">
+                    <rect x="5" y="5" width="90" height="90" rx="16" fill="#2c3e64" stroke="#e6c78c" stroke-width="2" />
+                    <text x="50" y="64" font-size="46" font-weight="700" fill="#e6c78c" text-anchor="middle">OY</text>
+                </svg>
+            </span>
+            <div>
+                <div data-i18n="nav.brand">OptiYouth HPC Lab</div>
+                <div style="font-size:13px;opacity:0.8;" data-i18n="nav.brandSub">Qinghai University</div>
+            </div>
+        </a>
+        <div class="lang-switch">
+            <button class="lang-btn active" data-lang="zh">中文</button>
+            <button class="lang-btn" data-lang="en">English</button>
+        </div>
+    </div>
+    <div class="nav-links">
+        <a href="../../subpage/subpages/overview.html" data-i18n="nav.links.overview">团队起源</a>
+        <a href="../../subpage/subpages/leader.html" data-i18n="nav.links.leader">负责人</a>
+        <a href="../../subpage/subpages/member.html" data-i18n="nav.links.member">团队成员</a>
+        <a href="../../subpage/subpages/direction.html" data-i18n="nav.links.direction">研究方向</a>
+        <a href="../../subpage/subpages/research.html" data-i18n="nav.links.research">科研成果</a>
+        <a href="../../subpage/subpages/competition.html" data-i18n="nav.links.competition">学科竞赛</a>
+        <a href="../../subpage/subpages/awards.html" data-i18n="nav.links.awards">奖励荣誉</a>
+        <a href="../../subpage/subpages/academic.html" data-i18n="nav.links.academic">学术服务</a>
+        <a href="../../subpage/subpages/collaboration.html" data-i18n="nav.links.collaboration">合作交流</a>
+        <a href="../../subpage/subpages/building.html" data-i18n="nav.links.building">团队建设</a>
+    </div>
 </nav>
+
 <main>
 <section class="section" id="members">
 <div class="container">
 <div class="section-head center">
-<h2>团队成员</h2>
+<h2 data-i18n="member.title">团队成员</h2>
 </div>
 <div class="member-tabs">
-<!-- 研究生分组（带标签） -->
+
+<!-- ===== 研究生 ===== -->
 <div class="member-group">
-<h3>研究生</h3>
+<h3 data-i18n="member.gradTitle">研究生</h3>
 <div class="member-grid">
+
 <article class="member-card">
 <img alt="任思谕" src="../assets/images/ren.jpg"/>
 <div class="member-body">
-<h4>任思谕</h4>
-<p class="member-grade">2024级硕士研究生</p>
+<h4 data-i18n="member.names.ren">任思谕</h4>
+<p class="member-grade" data-i18n="member.grad1">2024级硕士研究生</p>
 <div class="member-pill-row">
-<span class="member-pill">算法优化</span>
-<span class="member-pill">并行计算</span>
-<span class="member-pill">求解器</span>
+<span class="member-pill" data-i18n="member.pill.algorithm">算法优化</span>
+<span class="member-pill" data-i18n="member.pill.parallel">并行计算</span>
+<span class="member-pill" data-i18n="member.pill.solver">求解器</span>
 </div>
 </div>
 </article>
+
 <article class="member-card">
 <img alt="薛凤" src="../assets/images/xuefeng.jpg"/>
 <div class="member-body">
-<h4>薛凤</h4>
-<p class="member-grade">2025级硕士研究生</p>
+<h4 data-i18n="member.names.xue">薛凤</h4>
+<p class="member-grade" data-i18n="member.grad2">2025级硕士研究生</p>
 <div class="member-pill-row">
-<span class="member-pill">大模型</span>
-<span class="member-pill">并行计算</span>
-<span class="member-pill">系统优化</span>
+<span class="member-pill" data-i18n="member.pill.llm">大模型</span>
+<span class="member-pill" data-i18n="member.pill.parallel">并行计算</span>
+<span class="member-pill" data-i18n="member.pill.sysopt">系统优化</span>
 </div>
 </div>
 </article>
 
 </div>
 </div>
-<!-- 本科生（带标签） -->
+
+<!-- ===== 本科生 ===== -->
 <div class="member-group">
-<h3>本科生</h3>
+<h3 data-i18n="member.undergradTitle">本科生</h3>
 <div class="member-grid">
+
 <article class="member-card">
 <img alt="吴匡正" src="../assets/images/wukuangzheng.jpg"/>
 <div class="member-body">
-<h4>吴匡正</h4>
-<p class="member-grade">2022级本科生</p>
+<h4 data-i18n="member.names.wu">吴匡正</h4>
+<p class="member-grade" data-i18n="member.undergrad1">2022级本科生</p>
 <div class="member-pill-row">
-<span class="member-pill">算法</span>
-<span class="member-pill">求解器</span>
-<span class="member-pill">并行计算</span>
+<span class="member-pill" data-i18n="member.pill.algorithm">算法</span>
+<span class="member-pill" data-i18n="member.pill.solver">求解器</span>
+<span class="member-pill" data-i18n="member.pill.parallel">并行计算</span>
 </div>
 </div>
 </article>
+
 <article class="member-card">
 <img alt="缪弘博" src="../assets/images/miaohongbo.jpg"/>
 <div class="member-body">
-<h4>缪弘博</h4>
-<p class="member-grade">2023级本科生</p>
+<h4 data-i18n="member.names.miao">缪弘博</h4>
+<p class="member-grade" data-i18n="member.undergrad2">2023级本科生</p>
 <div class="member-pill-row">
-<span class="member-pill">大模型</span>
-<span class="member-pill">混合精度</span>
-<span class="member-pill">并行计算</span>
+<span class="member-pill" data-i18n="member.pill.llm">大模型</span>
+<span class="member-pill" data-i18n="member.pill.mixed">混合精度</span>
+<span class="member-pill" data-i18n="member.pill.parallel">并行计算</span>
 </div>
 </div>
 </article>
+
 <article class="member-card">
 <img alt="王佳" src="../assets/images/wangjia.jpg"/>
 <div class="member-body">
-<h4>王佳</h4>
-<p class="member-grade">2023级本科生</p>
+<h4 data-i18n="member.names.wang">王佳</h4>
+<p class="member-grade" data-i18n="member.undergrad2">2023级本科生</p>
 <div class="member-pill-row">
-<span class="member-pill">算法优化</span>
-<span class="member-pill">求解器</span>
-<span class="member-pill">混合精度</span>
+<span class="member-pill" data-i18n="member.pill.algorithm">算法优化</span>
+<span class="member-pill" data-i18n="member.pill.solver">求解器</span>
+<span class="member-pill" data-i18n="member.pill.mixed">混合精度</span>
 </div>
 </div>
 </article>
+
 </div>
 </div>
 
+<!-- ===== 2025级本科生 ===== -->
 <div class="member-group">
 <div class="member-grid">
+
 <article class="member-card">
 <img alt="陈佳乐" src="../assets/images/stu2026_chenjiale.jpg"/>
 <div class="member-body">
-<h4>陈佳乐</h4>
-<p class="member-grade">2025级本科生</p>
+<h4 data-i18n="member.names.chen">陈佳乐</h4>
+<p class="member-grade" data-i18n="member.undergrad3">2025级本科生</p>
 </div>
 </article>
+
 <article class="member-card">
 <img alt="彭静娇" src="../assets/images/stu2026_pengjingjiao.jpg"/>
 <div class="member-body">
-<h4>彭静娇</h4>
-<p class="member-grade">2025级本科生</p>
+<h4 data-i18n="member.names.peng">彭静娇</h4>
+<p class="member-grade" data-i18n="member.undergrad3">2025级本科生</p>
 </div>
 </article>
+
 <article class="member-card">
 <img alt="王兴伟" src="../assets/images/stu2026_wangxingwei.jpg"/>
 <div class="member-body">
-<h4>王兴伟</h4>
-<p class="member-grade">2025级本科生</p>
+<h4 data-i18n="member.names.wangxing">王兴伟</h4>
+<p class="member-grade" data-i18n="member.undergrad3">2025级本科生</p>
 </div>
 </article>
+
 </div>
 </div>
+
 </div>
 </div>
 </section>
 </main>
-<!-- 页脚与时间脚本 -->
+
+<!-- 页脚 -->
 <footer class="footer">
 <div class="container footer-inner">
 <div>
-<strong>OptiYouth HPC Lab</strong>
-<span>© 2020-   Bian Haodong · Qinghai University，Current Time：<span id="current-time">正在加载...</span></span>
+<strong data-i18n="footer.brand">OptiYouth HPC Lab</strong>
+<span data-i18n="footer.copyright">© 2020-   Bian Haodong · Qinghai University，当前时间：</span>
+<span id="current-time">正在加载...</span>
 </div>
-<a href="../../index.html">返回首页 ↑</a>
+<a href="../../index.html" data-i18n="footer.backHome">返回首页 ↑</a>
 </div>
 </footer>
+
+<script src="../i18n.js"></script>
+
 <script data-optiyouth-time="true">
-        (function () {
-            function updateCurrentTime() {
-                var el = document.getElementById('current-time');
-                if (!el) return;
-                var now = new Date();
-                var text = now.toLocaleString('zh-CN', {
-                    year: 'numeric',
-                    month: '2-digit',
-                    day: '2-digit',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    second: '2-digit',
-                    hour12: false
-                });
-                el.textContent = text;
-            }
-            updateCurrentTime();
-            setInterval(updateCurrentTime, 1000);
-        })();
-    </script>
+    (function () {
+        function updateCurrentTime() {
+            var el = document.getElementById('current-time');
+            if (!el) return;
+            var now = new Date();
+            var text = now.toLocaleString('zh-CN', {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            });
+            el.textContent = text;
+        }
+        updateCurrentTime();
+        setInterval(updateCurrentTime, 1000);
+    })();
+</script>
 </body>
 </html>
