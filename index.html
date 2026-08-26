@@ -333,7 +333,100 @@
             font-weight: 600;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
-    </style>
+    
+/* ---- 移动端汉堡菜单（仅 <=900px） ---- */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: auto;
+}
+.nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+@media(max-width:900px) {
+    .nav-toggle { display: flex !important; }
+    .nav {
+        position: relative !important;
+        flex-wrap: wrap !important;
+    }
+    .nav-links {
+        display: none !important;
+        width: 100% !important;
+        flex-direction: column !important;
+        padding: 8px 24px 16px !important;
+        gap: 0 !important;
+        background: #192b45 !important;
+        border-top: 1px solid rgba(255,255,255,0.1) !important;
+        order: 3;
+    }
+    .nav-links.open {
+        display: flex !important;
+    }
+    .nav-links a {
+        margin-left: 0 !important;
+        padding: 10px 0 !important;
+        border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+        font-size: 15px !important;
+    }
+    .nav-links a:last-child {
+        border-bottom: none !important;
+    }
+}
+
+/* ---- 首页移动端修复（仅 <=900px） ---- */
+@media(max-width:900px) {
+    .hero-wrap {
+        flex-direction: column !important;
+        padding: 40px 24px 60px !important;
+        min-height: auto !important;
+    }
+    .left-content {
+        padding-left: 0 !important;
+        text-align: center;
+    }
+    .left-content h1 { font-size: 42px !important; }
+    .left-content h2 { font-size: 20px !important; }
+    .left-content p { max-width: 100% !important; font-size: 15px !important; }
+    .btn-group a { margin-bottom: 10px; }
+    .right-cards-group {
+        position: relative !important;
+        left: 0 !important;
+        height: auto !important;
+        width: 100% !important;
+        margin-top: 40px !important;
+    }
+    .glass-card {
+        position: relative !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        width: 100% !important;
+        margin-bottom: 16px !important;
+        box-sizing: border-box;
+    }
+    .circle-bg-1, .circle-bg-2 { display: none !important; }
+}
+@media(max-width:640px) {
+    .left-content h1 { font-size: 32px !important; }
+    .left-content h2 { font-size: 18px !important; }
+    .hero-wrap { padding: 30px 18px 50px !important; }
+}
+</style>
 </head>
 <body>
     <!-- 顶部导航（已添加语言切换按钮） -->
@@ -356,6 +449,12 @@
                 <button class="lang-btn" data-lang="en">English</button>
             </div>
         </div>
+        <button class="nav-toggle" aria-label="菜单">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <div class="nav-links">
             <a href="subpage/subpages/overview.html" data-i18n="nav.links.overview">团队起源</a>
             <a href="subpage/subpages/leader.html" data-i18n="nav.links.leader">负责人</a>
@@ -423,5 +522,18 @@
         timeUpdate();
         setInterval(timeUpdate, 1000);
     </script>
+
+<script>
+    (function() {
+        var toggle = document.querySelector('.nav-toggle');
+        var menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', function() {
+                menu.classList.toggle('open');
+            });
+        }
+    })();
+</script>
+
 </body>
 </html>
