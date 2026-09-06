@@ -49,7 +49,7 @@ const i18nData = {
 
     // ---------- 团队起源 overview.html ----------
     overview: {
-        enTitle: { zh: 'ORIGIN STORY', en: 'ORIGIN STORY' },
+        
         title: { zh: '团队起源', en: 'Origin Story' },
         p1: {
             zh: '从一个人的代码痴迷，到一群少年的并肩奔赴，OptiYouth HPC Lab 的故事，是一场从未熄灭的"优化"热血长征。',
@@ -208,31 +208,36 @@ member: {
         papersTitle: { zh: '学术论文', en: 'Academic Papers' }
     },
 
-    // ---------- 学术服务 academic.html ----------
-    academic: {
-        title: { zh: '学术服务', en: 'Academic Services' },
-        subTitle: { zh: 'Academic Services', en: 'Academic Services' },
-        label: { zh: 'SERVICES', en: 'SERVICES' },
-        desc: {
-            zh: '实验室成员积极参与国内外学术会议与竞赛的组织与评审工作，推动领域发展。',
-            en: 'Lab members actively participate in the organization and review of academic conferences and competitions, promoting the development of the field.'
-        },
-        item1Title: { zh: 'Technical Program Committee Member', en: 'Technical Program Committee Member' },
-        item1Detail: {
-            zh: '2026 HPC CHINA PC Member (算法与性能优化方向)',
-            en: '2026 HPC CHINA PC Member (Algorithm and Performance Track)'
-        },
-        item2Title: { zh: 'Technical Program Committee Member', en: 'Technical Program Committee Member' },
-        item2Detail: {
-            zh: '第22届IFIP网络与并行计算国际会议 – PC Member (NPC\'2026 CCF-C会议)',
-            en: 'The 22nd Annual IFIP International Conference on Network and Parallel Computing – PC Member (NPC\'2026 CCF-C conference)'
-        },
-        item3Title: { zh: 'Organizing Committee Member', en: 'Organizing Committee Member' },
-        item3Detail: {
-            zh: '2023 Solver会议 – 组织委员会成员',
-            en: '2023 Solver Conference – Organizing Committee Member'
-        }
+// ---------- 学术服务 academic.html ----------
+academic: {
+    title: { zh: '学术服务', en: 'Academic Services' },
+    confTitle: { zh: '会议服务', en: 'TPC Member' },
+    journalTitle: { zh: '期刊审稿', en: 'Reviewers' },
+    thSerial: { zh: '序号', en: 'No.' },
+    thDetail: { zh: '会议 / 服务详情', en: 'Conference / Service Detail' },
+    thYear: { zh: '年份', en: 'Year' },
+    thJournalName: { zh: '期刊名称', en: 'Journal Name' },
+    // 会议条目
+    conf1Detail: {
+        zh: '2026 HPC CHINA— PC Member (Algorithm and Performance Track)',
+        en: '2026 HPC CHINA— PC Member (Algorithm and Performance Track)'
     },
+    conf1Year: { zh: '2026', en: '2026' },
+    conf2Detail: {
+        zh: 'The 22nd Annual IFIP International Conference on Network and Parallel Computing (NPC\'2026) — PC Member (CCF-C)',
+        en: 'The 22nd Annual IFIP International Conference on Network and Parallel Computing (NPC\'2026) — PC Member (CCF-C)'
+    },
+    conf2Year: { zh: '2026', en: '2026' },
+    conf3Detail: {
+        zh: '2023 Solver Conference — Organizing Committee Member',
+        en: '2023 Solver Conference — Organizing Committee Member'
+    },
+    conf3Year: { zh: '2023', en: '2023' },
+    // 期刊名称
+    journal1: { zh: 'IEEE Transactions on Computers', en: 'IEEE Transactions on Computers' },
+    journal2: { zh: 'CCF Transactions on High Performance Computing', en: 'CCF Transactions on High Performance Computing' },
+    journal3: { zh: 'The Journal of Supercomputing', en: 'The Journal of Supercomputing' }
+},
 
     // ---------- 奖励荣誉 awards.html ----------
     // ---------- 奖励荣誉 awards.html ----------
@@ -317,15 +322,15 @@ collaboration: {
     }
 },
 
-    // ---------- 团队建设 building.html ----------
+    // ---------- 团队建设 building.html【修复这里！】 ----------
     building: {
-        title: { zh: '团队建设 / 招新要求', en: 'Team Building / Recruitment' },
-        subTitle: { zh: 'TEAM BUILDING', en: 'TEAM BUILDING' },
-        goalsTitle: { zh: '团队建设目标', en: 'Goals' },
+        title: { zh: '团队建设 / 招新要求', en: 'Team Building / Join Us' },
+        subTitle: { zh: '', en: '' },
+        goalsTitle: { zh: '团队建设目标', en: 'Team‑Building Goals' },
         goal1Title: { zh: '学术', en: 'Academic' },
         goal1Desc: {
             zh: '围绕高性能计算、绿色算力、系统优化和科学计算开展论文阅读、实验复现和学术写作训练。',
-            en: 'Conduct paper reading, experiment reproduction, and academic writing training in High-Performance Computing, green computing, system optimization, and scientific computing.'
+            en: 'Conduct paper reading, experiment reproduction, and academic writing training in High‑Performance Computing, green computing, system optimization, and scientific computing.'
         },
         goal2Title: { zh: '竞赛', en: 'Competition' },
         goal2Desc: {
@@ -335,7 +340,7 @@ collaboration: {
         goal3Title: { zh: '专业技能', en: 'Professional Skills' },
         goal3Desc: {
             zh: '强化Linux集群环境管理、C/C++/Python高性能程序开发、MPI/OpenMP异构并行编程、性能瓶颈剖析与系统调优、科研工程文档撰写及大型超算项目协作能力。',
-            en: 'Strengthen skills in Linux cluster environment management, high-performance programming in C/C++/Python, MPI/OpenMP heterogeneous parallel programming, performance bottleneck analysis and system tuning, research engineering documentation, and large-scale supercomputing project collaboration.'
+            en: 'Strengthen skills in Linux cluster environment management, high‑performance programming in C/C++/Python, MPI/OpenMP heterogeneous parallel programming, performance bottleneck analysis and system tuning, research engineering documentation, and large‑scale supercomputing project collaboration.'
         },
         contactTitle: { zh: '联系方式与招新要求', en: 'Contact & Requirements' },
         email: { zh: '联系邮箱：', en: 'Email: ' },
